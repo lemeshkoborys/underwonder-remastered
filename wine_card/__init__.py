@@ -1,0 +1,1 @@
+default_app_config = 'wine_card.apps.WineCardConfig'
