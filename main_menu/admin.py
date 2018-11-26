@@ -24,7 +24,8 @@ class MenuCategoryModelAdmin(admin.ModelAdmin):
     list_display = (
         'title',
         'parent',
-        'title_eng'
+        'title_eng',
+        'link_to_items'
     )
 
     list_filter = (

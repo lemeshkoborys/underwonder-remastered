@@ -4,6 +4,9 @@ from django.core.validators import (
     MinValueValidator,
 )
 
+from django.urls import reverse
+from django.utils.html import format_html
+
 
 class AbstractItem(models.Model):
 
@@ -135,6 +138,12 @@ class AbstractCategory(models.Model):
             k = k.parent
 
         return ' -> '.join(full_path[::-1])
+
+    def link_to_items(self):
+        link = reverse("admin:main_menu_menu_item_view")
+        return format_html('<a href="{}">Edit {}</a>', link, self.title)
+    link_to_items.short_description = 'Show items'
+
 
 
 class MenuCategory(AbstractCategory):
