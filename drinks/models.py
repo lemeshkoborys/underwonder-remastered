@@ -27,3 +27,11 @@ class DrinkCategory(AbstractCategory):
         db_table = 'drink_categories'
         verbose_name = 'Категория'
         verbose_name_plural = 'Категории напитков'
+
+    @property
+    def get_items(self):
+        return DrinkItem.objects.filter(category=self)
+
+    @property
+    def get_childs(self):
+        return DrinkCategory.objects.filter(parent=self)

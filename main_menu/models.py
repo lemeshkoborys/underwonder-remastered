@@ -136,14 +136,6 @@ class AbstractCategory(models.Model):
 
         return ' -> '.join(full_path[::-1])
 
-    @property
-    def get_items(self):
-        return MenuItem.objects.filter(category=self)
-    
-    @property
-    def get_childs(self):
-        return MenuCategory.objects.filter(parent=self)
-
 
 class MenuCategory(AbstractCategory):
 
@@ -151,3 +143,11 @@ class MenuCategory(AbstractCategory):
         db_table = 'menu_categories'
         verbose_name = 'Категория'
         verbose_name_plural = 'Категории'
+
+    @property
+    def get_items(self):
+        return MenuItem.objects.filter(category=self)
+
+    @property
+    def get_childs(self):
+        return MenuCategory.objects.filter(parent=self)

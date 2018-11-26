@@ -9,6 +9,13 @@ class BreakfastItem(AbstractItem):
         verbose_name = 'Позиция завтрака'
         verbose_name_plural = 'Позиции завтрака'
 
+    bold = models.BooleanField(
+        default=False,
+        verbose_name='Наименование жирным текстом',
+        help_text='Выбирете этот параметр если хотите, \
+        чтобы наименование позиции было выделено жирным текстом'
+    )
+
     parent = models.ForeignKey(
         'self',
         blank=True,
@@ -21,8 +28,9 @@ class BreakfastItem(AbstractItem):
     )
 
     def get_subitems(self):
-        subitems = BreakfastItem.objects.filter(parent=self)
-        return_data = [x.title for x in subitems]
-        return return_data
+        return BreakfastItem.objects.filter(parent=self)
 
-    get_subitems.short_description = 'Вариации'
+    def subitems_admin_layout(self):
+        return [x.title for x in BreakfastItem.objects.filter(parent=self)]
+
+    subitems_admin_layout.short_description = 'Вариации'

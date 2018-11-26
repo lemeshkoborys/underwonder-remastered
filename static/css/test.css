@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothaProReg.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Gotham Pro';
+}
+
+.container {
+  min-height: 150vh;
+  display: flex;
+}
+
+.container-cols-2 {
+  column-count: 2;
+  column-rule: 1px solid #00000011;
+  column-fill: auto;
+  -webkit-column-fill: auto;
+  width: 100%;
+}
+
+.subcategory {
+  break-inside: avoid;
+}

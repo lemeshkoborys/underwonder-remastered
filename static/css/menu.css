@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothaProReg.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham Pro Bold';
+  src: url('../fonts/GothaProBol.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Gotham Pro';
+}
+h1, h3, p {
+  margin: 0;
+}
+
+header {
+  padding-top: 16px;
+  padding-bottom: 100px;
+}
+header h1{
+  padding: 24px 0;
+  font-size: 36px;
+  text-align: center;
+  color: #aa0500;
+}
+header svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: calc(50% - 10px);
+}
+
+.breakfast {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-bottom: 80px;
+}
+.breakfast-container-title {
+  font-size: 30px;
+  color: #aa0500;
+  padding-left: 40px;
+  padding-bottom: 36px;
+  font-weight: normal;
+}
+.breakfast-container-hours {
+  position: absolute;
+  left: calc(50% + 20px - 150px);
+  top: 0;
+  font-size: 24px;
+  color: #000000;
+  opacity: 0.5;
+  font-weight: normal;
+}
+.breakfast-container-hours sup {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.container-cols-1 {
+  width: calc(50% + 20px);
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+.container-cols-1 *:last-child {
+  margin-bottom: 0;
+}
+
+.main-menu {
+  margin-bottom: 80px;
+}
+.container-title {
+  width: 100%;
+  font-size: 30px;
+  color: #aa0500;
+  padding-bottom: 48px;
+  padding-left: 80px;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+.container-cols-2 {
+  width: 100%;
+  column-count: 2;
+  column-gap: 0;
+  /* column-rule: 1px solid #00000011; */
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+.container-cols-2 *:last-child {
+  margin-bottom: 0;
+}
+
+.container-cols-3 {
+  width: 100%;
+  column-count: 3;
+  column-gap: 0;
+  /* column-rule: 1px solid #00000011; */
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+.container-cols-3 *:last-child {
+  margin-bottom: 0;
+}
+
+.category-title {
+  font-size: 20px;
+  padding-bottom: 24px;
+}
+.subcategory-title {
+  font-size: 14px;
+  font-family: 'Gotham Pro Bold';
+  padding-bottom: 8px;
+}
+.subcategory {
+  margin-bottom: 24px;
+  padding-left: 40px;
+  break-inside: avoid;
+}
+
+.subcategory-title, .item-title, .item-description, .subitem-title, .subitem-description {
+  letter-spacing: -0.5px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+
+.item {
+  position: relative;
+  padding: 2px 0;
+}
+.item-title-bold {
+  font-family: 'Gotham Pro Bold';
+}
+.item-title, .item-description, .subitem-title, .subitem-description {
+  width: calc(100% - 180px);
+}
+.item-title {
+  font-size: 12px;
+}
+.subitem-title {
+  font-size: 12px;
+  padding-left: 60px;
+}
+.item-description {
+  font-size: 10px;
+  font-style: italic;
+}
+.subitem-description {
+  font-size: 10px;
+  font-style: italic;
+  padding-left: 60px;
+}
+.item-weight {
+  position: absolute;
+  left: calc(100% - 150px);
+  top: 0;
+  font-size: 10px;
+}
+.item-price {
+  position: absolute;
+  left: calc(100% - 100px);
+  top: 0;
+  font-size: 12px;
+}
+.wine-badge {
+  font-size: 15px;
+  color: #aa0500;
+}
+.beverages-badge {
+  font-size: 13px;
+  color: #aa0500;
+}
+
+.wine {
+  margin-bottom: 80px;
+}
+.wine-img {
+  display: block;
+  width: 100%;
+  margin-bottom: 80px;
+}
+.wine-year {
+  margin-top: 48px;
+}
+.wine-year > p {
+  font-size: 12px;
+  font-style: italic;
+  padding-left: 40px;
+  color: #aa0500;
+}
+
+.beverages {
+  margin-bottom: 120px;
+}
+
+footer {
+  position: relative;
+  height: 80px;
+  background-color: #aa0500;
+}
+footer svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: calc(50% - 10px);
+  top: 30px;
+}

@@ -8,7 +8,7 @@ class BreakfastItemModelAdmin(admin.ModelAdmin):
         'title',
         'price',
         'weight',
-        'get_subitems',
+        'subitems_admin_layout',
         'title_eng'
     )
 
