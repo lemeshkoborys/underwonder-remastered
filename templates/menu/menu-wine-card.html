@@ -5,6 +5,11 @@
             <h3 class="category-title">{{category.title}}</h3>
         {% endif %}
         <h3 class="subcategory-title">{{subcategory.title}}</h3>
+        {% if subcategory.get_childs %}
+            {% for child_category in subcategory.get_childs %}
+                1
+            {% endfor %}
+        {% endif %}
         {% for item in subcategory.get_items %}
             <div class="item">
                 <p class="item-title">{{item.title}}</p>
