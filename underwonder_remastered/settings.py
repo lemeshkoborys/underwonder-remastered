@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'underwonder_remastered',
         'USER': 'underwonder_remastered',
         'PASSWORD': 'RNq?YyMN=FMwr2tD',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT': '',
     }
 }
