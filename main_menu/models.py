@@ -33,18 +33,18 @@ class AbstractItem(models.Model):
         verbose_name='Описание категории'
     )
 
-    price = models.FloatField(
+    price = models.CharField(
+        max_length=20,
         verbose_name='Цена',
-        validators=[MinValueValidator(0.1, 'Цена не может иметь отрицательное значение')],
         blank=False,
         null=False
     )
 
-    weight = models.FloatField(
+    weight = models.CharField(
+        max_length=20,
         verbose_name='Вес/Литраж',
         blank=False,
-        null=False,
-        validators=[MinValueValidator(0.1, 'Укажите реальный вес')]
+        null=False
     )
 
 
