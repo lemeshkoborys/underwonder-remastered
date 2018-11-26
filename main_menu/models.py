@@ -43,7 +43,7 @@ class AbstractItem(models.Model):
     weight = models.CharField(
         max_length=20,
         verbose_name='Вес/Литраж',
-        blank=False,
+        blank=True,
         null=False
     )
 
