@@ -21,7 +21,7 @@ class AbstractItem(models.Model):
     title_eng = models.CharField(
         max_length=120,
         null=False,
-        blank=False,
+        blank=True,
         verbose_name='Наименование позиции ENG',
         default=""
     )
