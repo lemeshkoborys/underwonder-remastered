@@ -25,7 +25,7 @@ SECRET_KEY = '@4bpw=!tdtdf$sn%7c@a)(^r0jtsdlts$tj*c&_eki@ins_=w4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['digioceideal.pp.ua']
+ALLOWED_HOSTS = ['digioceideal.pp.ua', '127.0.0.1']
 
 
 # Application definition
