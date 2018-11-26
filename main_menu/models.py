@@ -140,7 +140,7 @@ class AbstractCategory(models.Model):
         return ' -> '.join(full_path[::-1])
 
     def link_to_items(self):
-        link = reverse("admin:main_menu_menu_item_view")
+        link = reverse("admin:main_menu_menuitem_view")
         return format_html('<a href="{}">Edit {}</a>', link, self.title)
     link_to_items.short_description = 'Show items'
 
