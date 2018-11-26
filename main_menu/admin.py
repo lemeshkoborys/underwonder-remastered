@@ -27,8 +27,8 @@ class MenuCategoryModelAdmin(admin.ModelAdmin):
     form = MenuCategoryForm
 
     def items_display(self, obj):
-        display_text = ", ".join([
-            "<a href={}>{}</a>".format(
+        display_text = "".join([
+            "<a href={}>{}</a>,<br/>".format(
                     reverse('admin:{}_{}_change'.format(obj._meta.app_label, obj._meta.model_name),
                     args=(child.pk,)),
                 child.title)
