@@ -20,11 +20,7 @@ class CategoryFilter(admin.SimpleListFilter):
 
     def queryset(self, request, queryset):
         if self.value():
-            if not queryset.filter(parent=self.value()):
-                return queryset.filter(category=self.value())
-            elif queryset.filter(category=self.value()) and not queryset.filter(parent=self.value()):
-                return queryset.filter(category=self.value())
-
+            return queryset.filter(parent=self.value())
         else:
             return queryset
 
@@ -95,5 +91,5 @@ class WineItemModelAdmin(admin.ModelAdmin):
     )
 
     list_filter = (
-        CategoryFilter,
+        ItemFilter,
     )
