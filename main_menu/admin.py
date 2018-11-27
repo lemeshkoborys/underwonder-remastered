@@ -3,7 +3,7 @@ from .models import MenuItem, MenuCategory
 from django.urls import reverse
 from django.utils.html import mark_safe
 from .forms import MenuCategoryForm
-from wine_card.admin import CategoryFilter
+from wine_card.admin import CategoryFilter, ItemFilter
 
 
 @admin.register(MenuItem)
@@ -18,7 +18,7 @@ class MenuItemModelAdmin(admin.ModelAdmin):
     )
 
     list_filter = (
-        CategoryFilter,
+        ItemFilter,
     )
 
 
