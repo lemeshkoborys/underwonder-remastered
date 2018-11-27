@@ -20,7 +20,27 @@ class CategoryFilter(admin.SimpleListFilter):
 
     def queryset(self, request, queryset):
         if self.value():
-            return queryset.filter(parent=self.value())
+            return queryset.filter(parent=self.value()) or queryset.filter(category=self.value())
+        else:
+            return queryset
+
+
+class ItemFilter(admin.SimpleListFilter):
+
+    title = 'Категория'
+    parameter_name = 'category'
+
+    def lookups(self, request, model_admin):
+        list_tuple = []
+        queryset = WineCategory.objects.filter(parent=None)
+        for category in queryset:
+            #print category
+            list_tuple.append((category.id, category.title))
+        return sorted(list_tuple, key=lambda tp: tp[1])
+
+    def queryset(self, request, queryset):
+        if self.value():
+            return queryset.filter(category=self.value())
         else:
             return queryset
 
