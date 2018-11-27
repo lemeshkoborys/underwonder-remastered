@@ -182,6 +182,7 @@ header svg {
   left: calc(100% - 80px);
   top: 2px;
   font-size: 12px;
+  margin-left: 1.2vw;
 }
 .wine-badge {
   font-size: 15px;
