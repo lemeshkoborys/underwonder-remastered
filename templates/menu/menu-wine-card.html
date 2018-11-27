@@ -13,7 +13,9 @@
                     ({{title.content}})
                     </p>
                 {% endif %}
-                <span class="item-weight">{{item.weight}} Л</span>
+                {% if item.weight %}
+                    <span class="item-weight">{{item.weight}} Л</span>
+                {% endif %}
                 <span class="item-price">{{item.price}} грн</span>
             </div>
         {% endfor %}
@@ -28,7 +30,9 @@
                 ({{title.content}})
                 </p>
             {% endif %}
-            <span class="item-weight">{{item.weight}} Л</span>
+            {% if item.weight %}
+                <span class="item-weight">{{item.weight}} Л</span>
+            {% endif %}
             <span class="item-price">{{item.price}} грн</span>
         </div>
     {% endfor %}
