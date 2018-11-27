@@ -12,6 +12,7 @@
 }
 
 body {
+  min-width: 1024px;
   margin: 0;
   font-family: 'Gotham Pro';
 }
@@ -28,6 +29,9 @@ header h1{
   font-size: 36px;
   text-align: center;
   color: #aa0500;
+}
+header .svg-div {
+  position: relative;
 }
 header svg {
   position: absolute;
@@ -55,7 +59,7 @@ header svg {
   top: 0;
   font-size: 24px;
   color: #000000;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   font-weight: normal;
 }
 .breakfast-container-hours sup {
@@ -70,6 +74,14 @@ header svg {
 }
 .container-cols-1 *:last-child {
   margin-bottom: 0;
+}
+.breakfast-image {
+  width: calc(50% - 20px);
+  min-height: 420px;
+  height: 40vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main-menu {
@@ -101,8 +113,11 @@ header svg {
   column-count: 3;
   column-gap: 0;
   /* column-rule: 1px solid #00000011; */
-  padding-left: 40px;
+  padding-left: 80px;
   box-sizing: border-box;
+}
+.container-cols-3 .subcategory {
+  padding-left: 0;
 }
 .container-cols-3 *:last-child {
   margin-bottom: 0;
@@ -138,7 +153,7 @@ header svg {
   font-family: 'Gotham Pro Bold';
 }
 .item-title, .item-description, .subitem-title, .subitem-description {
-  width: calc(100% - 180px);
+  width: calc(100% - 160px);
 }
 .item-title {
   font-size: 12px;
@@ -158,14 +173,14 @@ header svg {
 }
 .item-weight {
   position: absolute;
-  left: calc(100% - 150px);
-  top: 0;
+  left: calc(100% - 140px);
+  top: 2px;
   font-size: 10px;
 }
 .item-price {
   position: absolute;
-  left: calc(100% - 100px);
-  top: 0;
+  left: calc(100% - 80px);
+  top: 2px;
   font-size: 12px;
 }
 .wine-badge {
