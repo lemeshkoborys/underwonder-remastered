@@ -41,7 +41,7 @@ class AbstractItem(models.Model):
         blank=True,
         null=False,
         default="",
-        verbose_name='Описание позиции'
+        verbose_name='Описание позиции ENG'
     )
 
     price = models.CharField(
