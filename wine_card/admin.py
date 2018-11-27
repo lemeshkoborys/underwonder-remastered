@@ -20,7 +20,11 @@ class CategoryFilter(admin.SimpleListFilter):
 
     def queryset(self, request, queryset):
         if self.value():
-            return queryset.filter(parent=self.value()) or queryset.filter(category=self.value())
+            if queryset.filter(parent=self.value()):
+                return queryset.filter(parent=self.value())
+            elif queryset.filter(category=self.value()) and not queryset.filter(parent=self.value()):
+                return queryset.filter(category=self.value())
+
         else:
             return queryset
 
