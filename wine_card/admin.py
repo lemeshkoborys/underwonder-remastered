@@ -53,7 +53,7 @@ class WineCategoryModelAdmin(admin.ModelAdmin):
     )
 
     list_filter = (
-        'parent',
+        CategoryFilter,
     )
 
 

@@ -3,6 +3,7 @@ from .models import MenuItem, MenuCategory
 from django.urls import reverse
 from django.utils.html import mark_safe
 from .forms import MenuCategoryForm
+from wine_card.admin import CategoryFilter
 
 
 @admin.register(MenuItem)
@@ -48,5 +49,5 @@ class MenuCategoryModelAdmin(admin.ModelAdmin):
     )
 
     list_filter = (
-        'parent',
+        CategoryFilter,
     )

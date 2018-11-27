@@ -3,6 +3,7 @@ from .models import DrinkItem, DrinkCategory
 from .forms import DrinkCategoryForm, DrinkItemForm
 from django.urls import reverse
 from django.utils.html import mark_safe
+from wine_card.admin import CategoryFilter
 
 @admin.register(DrinkItem)
 class DrinkItemModelAdmin(admin.ModelAdmin):
@@ -49,5 +50,5 @@ class DrinkCategoryModelAdmin(admin.ModelAdmin):
     )
 
     list_filter = (
-        'parent',
+        CategoryFilter,
     )
