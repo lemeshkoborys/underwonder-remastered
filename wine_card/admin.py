@@ -13,6 +13,7 @@ class CategoryFilter(SimpleListFilter):
 
     def lookups(self, request, model_admin):
         list_tuple = []
+        print(WineCategory.objects.filter(parent=None))
         for category in WineCategory.objects.filter(parent=None):
             #print category
             list_tuple.append((category.id, category.title))
