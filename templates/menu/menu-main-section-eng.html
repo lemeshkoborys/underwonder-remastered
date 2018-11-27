@@ -1,0 +1,36 @@
+<div class="subcategory">
+{% if category.get_childs %}
+    {% for subcategory in category.get_childs %}
+        {% if forloop.first %}
+            <h3 class="category-title">{{category.title_eng}}</h3>
+        {% endif %}
+        <h3 class="subcategory-title">{{subcategory.title_eng}}</h3>
+        {% for item in subcategory.get_items %}
+            <div class="item">
+                <p class="item-title">{{item.title_eng}}</p>
+                {% if title.content %}
+                    <p class="item-description">
+                    ({{title.content_eng}})
+                    </p>
+                {% endif %}
+                <span class="item-weight">{{item.weight}} g</span>
+                <span class="item-price">{{item.price}} uah</span>
+            </div>
+        {% endfor %}
+    {% endfor %}
+{% else %}
+    <h3 class="category-title">{{category.title_eng}}</h3>
+    {% for item in category.get_items %}
+        <div class="item">
+            <p class="item-title">{{item.title_eng}}</p>
+            {% if item.content %}
+                <p class="item-description">
+                ({{item.content_eng}})
+                </p>
+            {% endif %}
+            <span class="item-weight">{{item.weight}} g</span>
+            <span class="item-price">{{item.price}} uah</span>
+        </div>
+    {% endfor %}
+{% endif %}
+</div>

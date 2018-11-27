@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Cache-control" content="no-cache">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="-1">
+		<title>Under Wonder</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="{% static 'css/less.css' %}" type="text/css"/>
+		<link rel="stylesheet" href="{% static 'css/less.css' %}" type="text/css"/>
+		<script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
+		<script src="{% static 'js/slick.min.js' %}"></script>
+		<script src="{% static 'js/scrollr.js' %}"></script>
+		<script src="{% static 'js/jquery.main.js' %}"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="header" class="fixed show">
+				<div class="left-holder">
+					<ul class="lang-list">
+						<li class="active"><a href="{% url 'index' %}">ru</a></li>
+						<li><a href="{% url 'index-eng' %}">eng</a></li>
+					</ul>
+					<ul class="social-list">
+						<li><a href="https://www.tripadvisor.com/Restaurant_Review-g294474-d1754996-Reviews-Under_Wonder-Kiev.html " class="tripadvisor">tripadvisor</a></li>
+						<li><a href="https://www.instagram.com/underwonder.kiev/" class="instagram">instagram</a></li>
+						<li><a href="https://www.facebook.com/underwonderkiev/" class="facebook">facebook</a></li>
+					</ul>
+				</div>
+				<div class="inner-holder">
+					<strong class="logo"><a href="#">Under Wonder</a></strong>
+				</div>
+				<div class="right-holder">
+					<span class="title">24/7</span>
+					<span class="address">ул. Большая Васильковская, 21</span>
+					<a href="tel:0442342181" class="tel">044 234 2181</a>
+				</div>
+			</header>
+			<section class="intro"></section>
+			<section class="about-section">
+				<div class="container">
+					<div class="content">
+						<h2>О нас</h2>
+						<p>Ресторан Under Wonder расположенный в самом центре Киева,<br> на площади Льва Толстого, возле кинотеатра «Киев».</p>
+						<p>Неоспоримый приоритет здесь - человеческое общение. <br> В этих стенах можно найти спокойствие с урбанистическим<br> привкусом и позволить себе особое удовольствие<br> приглушенного разговора.</p>
+					</div>
+				</div>
+			</section>
+			<section class="animate-section"></section>
+			<section class="text-image-section">
+				<div class="container content">
+					<div class="col-row">
+						<div class="col l-6 t-12">
+							<div class="description">
+								<h2>Меню</h2>
+								<p>В меню - блюда итальянской и французской кухни<br> в авторском исполнении от нашего шеф-повара.</p>
+								<p>Гостям здесь предложат Филе сибаса с булгуром<br> неро и яичным соусом, Паштет из печени цесарки<br> в вишневой глазури, Генуэзский мясной пирог с<br> винным соусом, Cалат с пряным лососем и козьим<br> сыром, Шпинатные мальтальяти с кроликом и<br> вялеными томатами, Осьминога по-лигурийски<br> с томатами и картофельным гратеном,<br> Филе утки в соусе терияки со сладким кус-кусом,<br> разнообразные блюда из хоспера и фирменный<br> Тирамису, или Чизкейк с трюфелем в белом<br> шоколаде и ореховой крошке.</p>
+								
+								<a class="menu-btn" href="{% url 'menu' %}" target="_blank">menu</a>
+							</div>
+						</div>
+						<div class="col l-6 t-12">
+							<div class="img-slider2 desktop">
+								<div class="images">
+									<div class="item"><img src="images/slide3.jpg" alt="image description"></div>
+									<div class="item"><img src="images/slide5.jpg" alt="image description"></div>
+								</div>
+								<div class="images">
+									<div class="item"><img src="images/slide4.jpg" alt="image description"></div>
+									<div class="item"><img src="images/slide6.jpg" alt="image description"></div>
+								</div>
+							</div>
+							<div class="img-slider2 mobile">
+								<div class="images">
+									<div class="item"><img src="images/slide3.jpg" alt="image description"></div>
+								</div>
+								<div class="images">
+									<div class="item"><img src="images/slide5.jpg" alt="image description"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="menu-section">
+
+			
+			
+			<section class="interior-section">
+				<div class="container">
+					<div class="content ">
+						<p>Интерьер заведения выполнен в оригинальной манере.<br> В зависимости от настроения и восприятия, он объединяет<br> в себе индустриальный американский стимпанк, благородную<br> английскую готику, мягкий итальянский романтизм.<br> Все элементы идеально гармонируют и рождают нечто<br> совершенно необычное.</p>
+					</div>
+				</div>
+			</section>
+			<section class="text-image-section type2">
+				<div class="container content">
+					<div class="col-row">
+						<div class="col l-6 t-12">
+						<div class="description">
+						
+							<h2>Интерьер</h2>
+							
+								<p>Главный зал вмещает до 35 посетителей, также<br> здесь можно организовать фуршет для вечеринки<br> на 50 человек.  Потолок в этом зале значительной<br> высоты, помещение освещается с помощью<br> огромной люстры ручной работы и настенных бра. </p>
+								<p>Спустившись по деревянной лестнице, посетители<br> попадают в нижнее помещение, где к их услугам<br> два зала: небольшой, рассчитанный на 8 человек<br> и зал с монументальными арками, мощными<br> потолочными перекрытиями на 40 человек<br> (80 человек во время фуршета).</p>
+							
+							
+							</div>
+						</div>
+						<div class="col l-6 t-12">
+							<div class="img-slider">
+								<div class="item"><img src="images/img1.jpg" alt="image description"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="img-section" style="background-image:url('images/bg4.jpg');"></section>
+<!-- 			<section class="season-section" style="background-image:url('images/img8.jpg');"></section> -->
+			<section class="text-image-section contacts">
+				<div class="container content">
+					<div class="col-row">
+						<div class="col l-6 t-12">
+						<div class="description">
+							<h2>Контакты</h2>
+							
+								<ul class="contacts-list">
+									<li>ул. Большая Васильковская, 21</li>
+									<li class="tel">
+										<a href="tel:0442342181">044 234 21 81</a>
+									</li>
+									<li class="mail">
+										<a href="mailto:underwonder.kiev@gmail.com">underwonder.kiev@gmail.com</a>
+									</li>
+								</ul>
+								<span class="title">Follow us:</span>
+								<ul class="social-list">
+									<li><a href="https://www.tripadvisor.com/Restaurant_Review-g294474-d1754996-Reviews-Under_Wonder-Kiev.html " class="tripadvisor">tripadvisor</a></li>
+									<li><a href="https://www.instagram.com/underwonder.kiev/" class="instagram">instagram</a></li>
+									<li><a href="https://www.facebook.com/underwonderkiev/" class="facebook">facebook</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col l-6 t-12">
+							<div id="lastPic" class="img-slider">
+								<div class="item"><img src="images/img3.jpg" alt="image description"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+				<section class="map-section">
+					<img src="images/map.jpg" alt="image description">
+				</section>
+			<footer id="footer">
+				<div class="left-holder">
+					<ul class="social-list">
+						<li><a href="https://www.tripadvisor.com/Restaurant_Review-g294474-d1754996-Reviews-Under_Wonder-Kiev.html " class="tripadvisor">tripadvisor</a></li>
+						<li><a href="https://www.instagram.com/underwonder.kiev/" class="instagram">instagram</a></li>
+						<li><a href="https://www.facebook.com/underwonderkiev/" class="facebook">facebook</a></li>
+					</ul>
+				</div>
+				<div class="right-inner">
+					<ul class="contact-list">
+						<li>
+							<a href="tel:0442342181" class="tel"><span class="ico"><img src="images/ico5.png" alt="image description"></span>044 234 21 81</a>
+						</li>
+						<li>
+							<a href="mailto:underwonder.kiev@gmail.com" class="mail"><span class="ico"><img src="images/ico6.png" alt="image description"></span>underwonder.kiev@gmail.com</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
