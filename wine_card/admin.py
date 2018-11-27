@@ -3,12 +3,11 @@ from .models import WineCategory, WineItem
 from .forms import WineCategoryForm, WineItemForm
 from django.urls import reverse
 from django.utils.html import mark_safe
-from django.contrib.admin import SimpleListFilter
 
 
-class CategoryFilter(SimpleListFilter):
+class CategoryFilter(admin.SimpleListFilter):
 
-    # title = 'Категория'
+    title = 'Категория'
     parameter_name = 'category'
 
     def lookups(self, request, model_admin):
@@ -55,7 +54,6 @@ class WineCategoryModelAdmin(admin.ModelAdmin):
 
     list_filter = (
         'parent',
-        SimpleListFilter,
     )
 
 
