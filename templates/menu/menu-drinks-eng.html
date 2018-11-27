@@ -4,6 +4,7 @@
         {% if forloop.first %}
             <h3 class="category-title">{{category.title_eng}}</h3>
         {% endif %}
+        <div class="subcategory">
         <h3 class="subcategory-title">{{subcategory.title_eng}}</h3>
         {% for item in subcategory.get_items|dictsort:"id" %}
             <div class="item">
@@ -16,6 +17,7 @@
                 <span class="item-weight">{{item.weight}} g</span>
                 <span class="item-price">{{item.price}} uah</span>
             </div>
+        </div>
         {% endfor %}
     {% endfor %}
 {% else %}

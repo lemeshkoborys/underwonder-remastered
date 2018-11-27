@@ -8,6 +8,7 @@
             {% endif %}
             </h3>
         {% endif %}
+        <div class="subcategory">
         <h3 class="subcategory-title">{{subcategory.title}}
         {% if subcategory.description %}
             <span class="wine-badge">{{subcategory.description}}</span>
@@ -27,6 +28,7 @@
                 <span class="item-price">{{item.price}} грн</span>
             </div>
         {% endfor %}
+        </div>
     {% endfor %}
 {% elif not category.parent%}
     <h3 class="category-title">{{category.title}}
