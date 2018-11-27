@@ -12,7 +12,7 @@ class CategoryFilter(SimpleListFilter):
     parameter_name = 'category'
 
     def lookups(self, request, model_admin):
-        return [x.title for x in WineCategory if not x.parent]
+        return [x.title for x in WineCategory.objects.all() if not x.parent]
 
     def queryset(self, request, queryset):
         if self.value():
