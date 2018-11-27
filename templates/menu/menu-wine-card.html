@@ -3,14 +3,17 @@
     {% for subcategory in category.get_childs|dictsort:"id" %}
         {% if forloop.first %}
             <h3 class="category-title">{{category.title}}</h3>
+            {% if category.description %}
+                <span class="wine-badge">{{category.description}}</span></h3>
+            {% endif %}
         {% endif %}
         <h3 class="subcategory-title">{{subcategory.title}}</h3>
         {% for item in subcategory.get_items|dictsort:"id" %}
             <div class="item">
                 <p class="item-title">{{item.title}}</p>
-                {% if title.description %}
+                {% if title.content %}
                     <p class="item-description">
-                    ({{title.description}})
+                    ({{title.content}})
                     </p>
                 {% endif %}
                 {% if item.weight %}
@@ -25,9 +28,9 @@
     {% for item in category.get_items|dictsort:"id" %}
         <div class="item">
             <p class="item-title">{{item.title}}</p>
-            {% if title.description %}
+            {% if title.content %}
                 <p class="item-description">
-                ({{title.description}})
+                ({{title.content}})
                 </p>
             {% endif %}
             {% if item.weight %}
