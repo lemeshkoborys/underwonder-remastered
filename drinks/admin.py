@@ -28,7 +28,7 @@ class DrinkCategoryModelAdmin(admin.ModelAdmin):
     def items_display(self, obj):
         display_text = "".join([
             "<a href={}>{}</a>,<br/>".format(
-                    reverse('admin:{}_{}_change'.format(obj._meta.app_label, obj._meta.model_name),
+                    reverse('admin:{}_{}_change'.format(child._meta.app_label, child._meta.model_name),
                     args=(child.pk,)),
                 child.title)
              for child in obj.get_items
