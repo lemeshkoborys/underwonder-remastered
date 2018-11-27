@@ -8,7 +8,7 @@ from django.contrib.admin import SimpleListFilter
 
 class CategoryFilter(SimpleListFilter):
 
-    title = 'Категория'
+    # title = 'Категория'
     parameter_name = 'category'
 
     def lookups(self, request, model_admin):
