@@ -15,7 +15,7 @@
         <span class="item-price">{{item.price}} грн</span>
     </div>
     {% if item.get_subitems %}
-        {% for subitem in item.get_subitems %}
+        {% for subitem in item.get_subitems|dictsort:"id" %}
             <div class="item">
                 <p class="subitem-title">- {{subitem.title_eng}}</p>
                 <span class="item-weight">{{subitem.weight}} г</span>
