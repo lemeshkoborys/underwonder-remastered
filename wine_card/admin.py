@@ -32,6 +32,7 @@ class WineCategoryModelAdmin(admin.ModelAdmin):
     form = WineCategoryForm
 
     def items_display(self, obj):
+        WineCategory.objects.filter(parent=None)
         display_text = "".join([
             "<a href={}>{}</a>,<br/>".format(
                     reverse('admin:{}_{}_change'.format(child._meta.app_label, child._meta.model_name),
