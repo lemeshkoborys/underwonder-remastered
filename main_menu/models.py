@@ -34,7 +34,14 @@ class AbstractItem(models.Model):
         blank=True,
         null=False,
         default="",
-        verbose_name='Описание категории'
+        verbose_name='Описание позиции'
+    )
+
+    content_eng = models.TextField(
+        blank=True,
+        null=False,
+        default="",
+        verbose_name='Описание позиции'
     )
 
     price = models.CharField(
