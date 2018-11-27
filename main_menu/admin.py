@@ -18,7 +18,7 @@ class MenuItemModelAdmin(admin.ModelAdmin):
     )
 
     list_filter = (
-        'category',
+        CategoryFilter,
     )
 
 

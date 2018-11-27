@@ -19,7 +19,7 @@ class DrinkItemModelAdmin(admin.ModelAdmin):
     )
 
     list_filter = (
-        'category',
+        CategoryFilter,
     )
 
 

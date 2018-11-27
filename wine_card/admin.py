@@ -71,5 +71,5 @@ class WineItemModelAdmin(admin.ModelAdmin):
     )
 
     list_filter = (
-        'category',
+        CategoryFilter,
     )
