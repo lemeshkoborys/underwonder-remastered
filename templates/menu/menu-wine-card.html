@@ -8,9 +8,9 @@
         {% for item in subcategory.get_items|dictsort:"id" %}
             <div class="item">
                 <p class="item-title">{{item.title}}</p>
-                {% if title.content %}
+                {% if title.description %}
                     <p class="item-description">
-                    ({{title.content}})
+                    ({{title.description}})
                     </p>
                 {% endif %}
                 {% if item.weight %}
@@ -25,9 +25,9 @@
     {% for item in category.get_items|dictsort:"id" %}
         <div class="item">
             <p class="item-title">{{item.title}}</p>
-            {% if title.content %}
+            {% if title.description %}
                 <p class="item-description">
-                ({{title.content}})
+                ({{title.description}})
                 </p>
             {% endif %}
             {% if item.weight %}
