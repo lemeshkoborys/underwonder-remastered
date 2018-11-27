@@ -13,15 +13,15 @@ class CategoryFilter(SimpleListFilter):
 
     def lookups(self, request, model_admin):
         list_tuple = []
-        print(WineCategory.objects.filter(parent=None))
-        for category in WineCategory.objects.filter(parent=None):
+        queryset = WineCategory.objects.filter(parent=None)
+        for category in queryset:
             #print category
             list_tuple.append((category.id, category.title))
-        return list_tuple
+        return sorted(list_tuple, key=lambda tp: tp[1])
 
     def queryset(self, request, queryset):
         if self.value():
-            return queryset.filter(parent=None)
+            return queryset.filter(parent=self.value())
         else:
             return queryset
 
