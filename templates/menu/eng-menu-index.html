@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Меню</title>
+  <title>Menu</title>
   <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{% static 'css/menu.css' %}">
@@ -20,7 +20,7 @@
 </head>
 <body>
   <header>
-    <h1>Меню</h1>
+    <h1>Menu</h1>
     <svg>
       <circle cx="50%" cy="20%" r="18%" fill="#aa0500" />
       <circle cx="80%" cy="50%" r="18%" fill="#aa0500" />
@@ -40,7 +40,7 @@
       </span>
       <div class="subcategory">
         {% for item in breakasts %}
-          {% include 'menu/menu-breakfasts.html' %}
+          {% include 'menu/menu-breakfasts-eng.html' %}
         {% endfor %}
       </div>
     </div>
@@ -51,7 +51,7 @@
     <h3 class="container-title">Main menu</h3>
     <div class="container-cols-2">
       {% for category in main_categories %}
-        {% include 'menu/menu-main-section.html' %}
+        {% include 'menu/menu-main-section-eng.html' %}
       {% endfor %}
     </div>
   </div>
@@ -60,7 +60,7 @@
     <img class="wine-img" src="{% static 'img/wine.jpeg' %}" alt="wine underwonder">
     <div class="container-cols-2">
       {% for category in wine_card %}
-        {% include 'menu/menu-wine-card.html' %}
+        {% include 'menu/menu-wine-card-eng.html' %}
       {% endfor %}
     </div>
     <div class="container-cols-2 wine-year">
@@ -72,7 +72,7 @@
   <div class="beverages">
     <div class="container-cols-3">
       {% for category in drinks %}
-        {% include 'menu/menu-drinks.html' %}
+        {% include 'menu/menu-drinks-eng.html' %}
       {% endfor %}
       </div>
   </div>

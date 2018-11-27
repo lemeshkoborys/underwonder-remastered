@@ -1,0 +1,26 @@
+
+{% if not item.parent %}
+    <div class="item">
+    {% if item.bold %}
+        <p class="item-title item-title-bold">"{{item.title_eng}}"</p>
+    {% else %}
+        <p class="item-title">{{item.title_eng}}</p>
+    {% endif %}
+    {% if item.content %}
+        <p class="item-description">
+            ({{item.content_eng}})
+        </p>
+    {% endif %}
+        <span class="item-weight">{{item.weight}} г</span>
+        <span class="item-price">{{item.price}} грн</span>
+    </div>
+    {% if item.get_subitems %}
+        {% for subitem in item.get_subitems %}
+            <div class="item">
+                <p class="subitem-title">- {{subitem.title_eng}}</p>
+                <span class="item-weight">{{subitem.weight}} г</span>
+                <span class="item-price">{{subitem.price}} грн</span>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endif %}
