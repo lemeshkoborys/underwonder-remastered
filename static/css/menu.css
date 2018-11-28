@@ -55,7 +55,7 @@ header svg {
 }
 .breakfast-container-hours {
   position: absolute;
-  left: calc(50% + 20px - 150px);
+  left: calc(50% + 20px - 140px);
   top: 0;
   font-size: 24px;
   color: #000000;
@@ -147,7 +147,7 @@ header svg {
 
 .item {
   position: relative;
-  padding: 2px 0;
+  padding: 4px 0;
 }
 .item-title-bold {
   font-family: 'Gotham Pro Bold';
@@ -174,13 +174,13 @@ header svg {
 .item-weight {
   position: absolute;
   left: calc(100% - 140px);
-  top: 2px;
+  top: 4px;
   font-size: 10px;
 }
 .item-price {
   position: absolute;
   left: calc(100% - 80px);
-  top: 2px;
+  top: 4px;
   font-size: 12px;
 }
 .wine-badge {
