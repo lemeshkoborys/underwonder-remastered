@@ -1,13 +1,12 @@
 <div class="subcategory">
 {% if category.get_childs %}
     {% for subcategory in category.get_childs|dictsort:"id" %}
-        <h3 class="subcategory-title">{{subcategory.title}}
         {% if forloop.first %}
-            
-            {% if subcategory.description %}
-                <span class="wine-badge">{{subcategory.description}}</span>
-            {% endif %}
-            </h3>
+            <h3 class="subcategory-title">{{subcategory.title}}
+        {% if subcategory.description %}
+            <span class="wine-badge">{{subcategory.description}}</span>
+        {% endif %}
+        </h3>
         {% endif %}
         <div class="subcategory">
         <h3 class="subcategory-title">{{subcategory.title}}</h3>
@@ -28,11 +27,7 @@
         </div>
     {% endfor %}
 {% else %}
-    <h3 class="subcategory-title">{{subcategory.title}}
-    {% if subcategory.description %}
-        <span class="wine-badge">{{subcategory.description}}</span>
-    {% endif %}
-    </h3>
+    <h3 class="category-title">{{category.title}}</h3>
     {% for item in category.get_items|dictsort:"id" %}
         <div class="item">
             <p class="item-title">{{item.title}}</p>

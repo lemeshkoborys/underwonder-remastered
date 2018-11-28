@@ -2,9 +2,9 @@
 {% if category.get_childs %}
     {% for subcategory in category.get_childs|dictsort:"id" %}
         {% if forloop.first %}
-                <h3 class="subcategory-title">{{subcategory.title}}
+                <h3 class="subcategory-title">{{subcategory.title_eng}}
                 {% if subcategory.description_eng %}
-                    <span class="wine-badge">{{subcategory.description}}</span>
+                    <span class="wine-badge">{{subcategory.description_eng}}</span>
                 {% endif %}
                 </h3>
         {% endif %}
