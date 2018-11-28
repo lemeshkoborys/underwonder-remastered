@@ -1,1 +1,1 @@
-unable to find user underwonder_remastered: no matching entries in passwd file
+pg_dump: [archiver (db)] connection to database "myapp_production" failed: FATAL:  role "root" does not exist
