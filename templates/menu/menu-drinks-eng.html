@@ -2,9 +2,9 @@
 {% if category.get_childs %}
     {% for subcategory in category.get_childs|dictsort:"id" %}
         {% if forloop.first %}
-            <h3 class="subcategory-title">{{subcategory.title-eng}}
+            <h3 class="subcategory-title">{{category.title-eng}}
         {% if subcategory.description %}
-            <span class="wine-badge">{{subcategory.description_eng}}</span>
+            <span class="wine-badge">{{category.description_eng}}</span>
         {% endif %}
         </h3>
         {% endif %}
@@ -28,8 +28,8 @@
     {% endfor %}
 {% else %}
     <h3 class="category-title">{{category.title_eng}}
-    {% if subcategory.description %}
-        <span class="wine-badge">{{subcategory.description}}</span>
+    {% if category.description %}
+        <span class="wine-badge">{{category.description}}</span>
     {% endif %}
     </h3>
     {% for item in category.get_items|dictsort:"id" %}
