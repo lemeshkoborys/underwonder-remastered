@@ -3,7 +3,36 @@ from .models import MenuItem, MenuCategory
 from django.urls import reverse
 from django.utils.html import mark_safe
 from .forms import MenuCategoryForm
-from wine_card.admin import CategoryFilter, ItemFilter
+from wine_card.admin import CategoryFilter
+
+
+class ItemFilter(admin.SimpleListFilter):
+
+    title = 'Категория'
+    parameter_name = 'category'
+
+    def lookups(self, request, model_admin):
+        list_tuple = []
+        queryset = MenuCategory.objects.filter(parent=None)
+        for category in queryset:
+            #print category
+            list_tuple.append((category.id, category.title))
+        return sorted(list_tuple, key=lambda tp: tp[1])
+
+    def queryset(self, request, queryset):
+        if self.value():
+            print (self.value()) 
+            category = MenuCategory.objects.get(pk=self.value())
+            print(category.get_childs)
+            for subcategory in category.get_childs:
+                if category.get_items:
+                    return subcategory.get_items | category.get_items
+                else:
+                    return subcategory.get_items
+                
+            return queryset.filter(category=category)
+        else:
+            return queryset
 
 
 @admin.register(MenuItem)
