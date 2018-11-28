@@ -16,17 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 import main_menu.urls
-from django.shortcuts import render
-
-def index_render(request):
-    return render(request, 'index.html')
-
-def eng_index_render(request):
-    return render(request, 'eng-index.html')
+import index.urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index_render, name='index'),
-    path('eng/', eng_index_render, name='index-eng'),
+    path('', include('index.urls'), name='index'),
     path('menu/', include('main_menu.urls'))
 ]

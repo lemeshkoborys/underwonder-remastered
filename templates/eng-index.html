@@ -44,8 +44,8 @@
 			<div class="container">
 				<div class="content">
 					<h2>About us</h2>
-					<p>The Under Wonder restaurant is located in the heart of Kiev,<br />on the Lev Tolstoy Square.</p>
-<p>Main priority here is human communication.<br />In these walls you can find peace with an urban flavor,<br />afford a special pleasure of a quiet conversation, gourmet<br />cuisine in an artistic-designed space.</p>				</div>
+					<p>{{about.content_eng | linebreaks}}</p>
+				</div>
 			</div>
 		</section>
 		<section class="animate-section"></section>
@@ -55,8 +55,7 @@
 					<div class="col l-6 t-12">
 						<div class="description">
 							<h2>Menu</h2>
-							<p>Menu consist of of Italian and French cuisine in the <br />author's execution from our chef.</p>
-<p>Guests will be offered Sea bass fillet with black burgur<br />and egg sauce, Guinea fowl liver pate in cherry glaze,<br />Genoa meat pie with wine sauce, Salad with salmon<br />and goat cheese, Homemade spinach maltagliati with<br />rabbit and sun-dried tomatoes, Ligurian style octopus<br />with tomatoes and potato gratin, Duck fillet with teriyaki sauce and sweet couscous, a variety of dishes<br />from josper, Tiramisu or Cheesecake with a truffle<br />in white chocolate and walnut crumbs.</p>							
+							<p>{{menu.content_eng | linebreaks}}</p>							
 							<a class="menu-btn" href="{% url 'menu-eng' %}">menu</a>
 						</div>
 					</div>
@@ -90,7 +89,8 @@
 			<section class="interior-section">
 				<div class="container">
 					<div class="content ">
-						<p>The interior of the restaurant is made in an original manner.<br />It combines an industrial American steampunk, noble English <br />gothic, soft Italian romanticism. All elements perfectly harmonize<br />and give birth to completely unusual atmosphere.</p>					</div>
+					<p>{{photo_text.content_eng | linebreaks}}</p>
+					</div>
 				</div>
 			</section>
 			<section class="text-image-section type2">
@@ -98,12 +98,8 @@
 					<div class="col-row">
 						<div class="col l-6 t-12">
 							<div class="description">
-								
 								<h2>Interior</h2>
-								
-								<p>The main hall seats up to 35 visitors, and if there is<br />a banquet for a corporate party, it will fit 50 people.<br />The ceiling in this hall is of a considerable height,<br />the room is illuminated with the help of a huge<br />handmade chandelier and wall sconces.</p>
-<p>Going down the wooden staircase, visitors enter<br />the lower room, where they are offered two rooms:<br />a small one, designed for 8 people, and a hall with <br />monumental arches for 40 people (80 people<br />during a buffet table)</p>								
-								
+								<p>{{interior.content_eng | linebreaks}}</p>
 							</div>
 						</div>
 						<div class="col l-6 t-12">
@@ -149,7 +145,7 @@
 				</div>
 			</section>
 			<section class="map-section">
-				<img src="images/map.jpg" alt="image description">
+				<img src="{% static 'images/map.jpg' %}" alt="image description">
 			</section>
 			<footer id="footer">
 				<div class="left-holder">
