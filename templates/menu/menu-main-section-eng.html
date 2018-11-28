@@ -1,4 +1,4 @@
-<div class="subcategory">
+<div class="category">
 {% if category.get_childs %}
     {% for subcategory in category.get_childs|dictsort:"id" %}
         {% if forloop.first %}
@@ -25,7 +25,7 @@
         </div>
     {% endfor %}
 {% else %}
-    <h3 class="subcategory-title">{{subcategory.title_eng}}
+    <h3 class="category-title">{{subcategory.title_eng}}
     {% if subcategory.description_eng %}
         <span class="wine-badge">{{subcategory.description_eng}}</span>
     {% endif %}

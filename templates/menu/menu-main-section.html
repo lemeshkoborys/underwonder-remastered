@@ -25,8 +25,8 @@
         </div>
     {% endfor %}
 {% else %}
-        <h3 class="subcategory-title">{{category.title}}
-        {% if subcategory.description %}
+        <h3 class="category-title">{{category.title}}
+        {% if category.description %}
             <span class="wine-badge">{{category.description}}</span>
         {% endif %}
         </h3>
