@@ -11,7 +11,7 @@ class Section(models.Model):
     title = models.CharField(
         max_length=120,
         verbose_name='Имя секции главного меню',
-        editable=False
+        # editable=False
     )
 
     content = models.TextField(
