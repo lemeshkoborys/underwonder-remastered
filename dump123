@@ -1010,6 +1010,129 @@ COPY public.django_admin_log (id, action_time, object_id, object_repr, action_fl
 115	2018-11-28 02:50:40.292844+00	21	Riesling (Dr. Loosen) Qualitatswein	1	[{"added": {}}]	11	1
 116	2018-11-28 02:50:55.556903+00	22	Gewurztraminer Villa Wolf (J.L.Wolf) Qualitatswein	1	[{"added": {}}]	11	1
 117	2018-11-28 02:51:15.525541+00	23	Pinot Noir (Villa Wolf) Qualitatswein	1	[{"added": {}}]	11	1
+118	2018-11-28 10:31:13.972899+00	24	Шардоне сухое сортовое - Chardonnay (Колонист)	1	[{"added": {}}]	11	1
+119	2018-11-28 10:31:28.21824+00	25	Каберне сухое сортовое - Cabernet (Колонист)	1	[{"added": {}}]	11	1
+120	2018-11-28 10:31:43.66632+00	26	Одеське чорне сухе сортове	1	[{"added": {}}]	11	1
+121	2018-11-28 10:31:58.185487+00	27	White House Wine	1	[{"added": {}}]	11	1
+122	2018-11-28 10:32:11.620519+00	28	Red House Wine	1	[{"added": {}}]	11	1
+123	2018-11-28 10:32:34.432777+00	29	Sancerre Le Chene (Lucien Crochet)	1	[{"added": {}}]	11	1
+124	2018-11-28 10:32:49.998777+00	30	Alastro (Planeta)	1	[{"added": {}}]	11	1
+125	2018-11-28 10:33:10.813365+00	31	Corvar Rosso Veroneze (Zeni)	1	[{"added": {}}]	11	1
+126	2018-11-28 10:33:23.870014+00	32	Sangiovese Gamla (Golan Heights Winery)	1	[{"added": {}}]	11	1
+127	2018-11-28 10:33:39.406422+00	33	Pecorino Bianco (Illuminati Dino) DOC	1	[{"added": {}}]	11	1
+128	2018-11-28 10:33:55.796381+00	34	Santoro Muntepulciano d'Abruzzo (San Marzano) DOC	1	[{"added": {}}]	11	1
+129	2018-11-28 10:34:09.008108+00	35	Santoro Sangiovese Terre di Chieti (San Marzano) IGT	1	[{"added": {}}]	11	1
+130	2018-11-28 10:34:25.347507+00	36	Pfefferer Moscato Classic Line (Colterenzio) DOC	1	[{"added": {}}]	11	1
+131	2018-11-28 10:34:36.388847+00	37	Muller Thurgau Dolomiti Classic Line (Colterenzio)	1	[{"added": {}}]	11	1
+132	2018-11-28 10:34:52.512953+00	38	Gavi il Doge (Broglia) DOCG	1	[{"added": {}}]	11	1
+133	2018-11-28 10:35:05.128456+00	39	Gavi Villa Scolca (La Scolca) DOCG	1	[{"added": {}}]	11	1
+134	2018-11-28 10:35:18.824116+00	40	Dolcetto d'Alba Munfrina (Pelissero) DOC	1	[{"added": {}}]	11	1
+135	2018-11-28 10:35:34.69902+00	41	Barbaresco Roberto Fossati (Guido Mazzarello) DOCG	1	[{"added": {}}]	11	1
+136	2018-11-28 10:35:47.134891+00	42	Barolo Serralunga (Schiavenza) DOCG	1	[{"added": {}}]	11	1
+137	2018-11-28 10:36:03.302572+00	43	Pinot GR.delle Venezia Fiorile Cesari IGT	1	[{"added": {}}]	11	1
+138	2018-11-28 10:36:23.874189+00	44	Soave Il Seleze (I Stefanini) DOC	1	[{"added": {}}]	11	1
+139	2018-11-28 10:36:39.174443+00	45	Valpolicella, Cantine di Ora (Schenk) DOC	1	[{"added": {}}]	11	1
+140	2018-11-28 10:36:52.507555+00	46	Amarona della Valpolicella Classico (Cesari) DOCG	1	[{"added": {}}]	11	1
+141	2018-11-28 10:37:05.698339+00	47	Chianto Classico Riserva (Schenk) DOCG	1	[{"added": {}}]	11	1
+142	2018-11-28 10:41:59.024079+00	1	Аперетиви	1	[{"added": {}}]	12	1
+143	2018-11-28 10:42:05.794772+00	2	Горілка	1	[{"added": {}}]	12	1
+144	2018-11-28 10:42:13.585763+00	3	Ром	1	[{"added": {}}]	12	1
+145	2018-11-28 10:42:15.7703+00	4	Джин	1	[{"added": {}}]	12	1
+146	2018-11-28 10:42:21.744887+00	5	Текіла	1	[{"added": {}}]	12	1
+147	2018-11-28 10:42:27.673725+00	6	Віскі	1	[{"added": {}}]	12	1
+148	2018-11-28 10:42:33.20735+00	7	Коньяк	1	[{"added": {}}]	12	1
+149	2018-11-28 10:42:38.483784+00	8	Бренді	1	[{"added": {}}]	12	1
+150	2018-11-28 10:42:43.788165+00	9	Лікери	1	[{"added": {}}]	12	1
+151	2018-11-28 10:42:49.404943+00	10	Спеціальні вина	1	[{"added": {}}]	12	1
+152	2018-11-28 10:42:54.112798+00	11	Пиво	1	[{"added": {}}]	12	1
+153	2018-11-28 10:42:59.735038+00	12	Вода	1	[{"added": {}}]	12	1
+154	2018-11-28 10:43:06.576405+00	13	Свіжовижатий сік	1	[{"added": {}}]	12	1
+155	2018-11-28 10:43:10.904426+00	14	Кава ILLY	1	[{"added": {}}]	12	1
+156	2018-11-28 10:43:16.396895+00	15	Чай	1	[{"added": {}}]	12	1
+157	2018-11-28 10:43:35.473188+00	1	Loose tea Daman	1	[{"added": {}}]	13	1
+158	2018-11-28 10:43:48.319262+00	2	Espresso	1	[{"added": {}}]	13	1
+159	2018-11-28 10:43:57.558503+00	3	Americano	1	[{"added": {}}]	13	1
+160	2018-11-28 10:44:25.253892+00	4	Espresso Macchiato	1	[{"added": {}}]	13	1
+161	2018-11-28 10:44:36.509447+00	5	Cappuccino	1	[{"added": {}}]	13	1
+162	2018-11-28 10:44:48.093069+00	6	Latte Macchiato	1	[{"added": {}}]	13	1
+163	2018-11-28 10:45:17.555683+00	7	Молоко (100мл.)	1	[{"added": {}}]	13	1
+164	2018-11-28 10:45:32.119816+00	8	Апельсин, яблоко, грейпфрут, морква	1	[{"added": {}}]	13	1
+165	2018-11-28 10:45:48.824354+00	9	Селера	1	[{"added": {}}]	13	1
+166	2018-11-28 10:45:57.723179+00	10	Ананас	1	[{"added": {}}]	13	1
+167	2018-11-28 10:46:20.105233+00	11	Rocchetta(Italy)	1	[{"added": {}}]	13	1
+168	2018-11-28 10:46:38.62276+00	12	VODA UA (Ukraine)	1	[{"added": {}}]	13	1
+169	2018-11-28 10:47:00.863829+00	13	Coca Cola	1	[{"added": {}}]	13	1
+170	2018-11-28 10:47:26.379766+00	14	Royal Club Tonic water	1	[{"added": {}}]	13	1
+171	2018-11-28 10:47:43.336661+00	15	Royal Club Soda water	1	[{"added": {}}]	13	1
+172	2018-11-28 10:48:01.681135+00	16	Leffe (light, dark)	1	[{"added": {}}]	13	1
+173	2018-11-28 10:48:20.656155+00	17	Palm (n/a)	1	[{"added": {}}]	13	1
+174	2018-11-28 10:48:40.346437+00	18	Sherry Oloroso Alburejo	1	[{"added": {}}]	13	1
+175	2018-11-28 10:49:07.210189+00	19	Port Sandeman Towny 10 y.o	1	[{"added": {}}]	13	1
+176	2018-11-28 10:49:23.269022+00	20	Dulce de Moscatel Gran Feudo (Bodegas Julian Chivite	1	[{"added": {}}]	13	1
+177	2018-11-28 10:49:34.674159+00	20	Dulce de Moscatel Gran Feudo (Bodegas Julian Chivite)	2	[{"changed": {"fields": ["title", "title_eng"]}}]	13	1
+178	2018-11-28 10:49:53.882028+00	21	Baileys	1	[{"added": {}}]	13	1
+179	2018-11-28 10:50:07.740323+00	22	Cointreau	1	[{"added": {}}]	13	1
+180	2018-11-28 10:50:18.389452+00	23	Kahlua	1	[{"added": {}}]	13	1
+181	2018-11-28 10:50:30.964126+00	24	Sambuca Ramazotti	1	[{"added": {}}]	13	1
+182	2018-11-28 10:50:46.771112+00	25	Grappa Berta (Sant’Antone, Valdavi)	1	[{"added": {}}]	13	1
+183	2018-11-28 10:51:01.33788+00	26	Calvados Reserver Pays d’Auge (Christian Droun)	1	[{"added": {}}]	13	1
+184	2018-11-28 10:51:16.223032+00	27	Ferrand Ambre	1	[{"added": {}}]	13	1
+185	2018-11-28 10:51:27.328747+00	28	H by Hine VSOP	1	[{"added": {}}]	13	1
+186	2018-11-28 10:51:37.573949+00	29	Cigar Reserve Hine XO	1	[{"added": {}}]	13	1
+187	2018-11-28 10:52:21.605395+00	30	Jack Daniel’s	1	[{"added": {}}]	13	1
+188	2018-11-28 10:52:31.40923+00	31	Four Roses Small Batch	1	[{"added": {}}]	13	1
+189	2018-11-28 10:52:42.261829+00	32	Loch Lomond Single Grain	1	[{"added": {}}]	13	1
+190	2018-11-28 10:52:56.434106+00	33	Loch Lomond Original	1	[{"added": {}}]	13	1
+191	2018-11-28 10:53:22.833331+00	34	Jameson Black Barrel	1	[{"added": {}}]	13	1
+192	2018-11-28 10:53:35.655089+00	35	Arran Lochranza Reserve	1	[{"added": {}}]	13	1
+193	2018-11-28 10:53:46.665386+00	36	BenRiach Sherry 12 y.o	1	[{"added": {}}]	13	1
+194	2018-11-28 10:53:59.270859+00	37	Benromach Sassicaia Wood Finish	1	[{"added": {}}]	13	1
+195	2018-11-28 10:54:11.815158+00	38	Milagro silver (100% de agave)	1	[{"added": {}}]	13	1
+196	2018-11-28 10:54:23.897243+00	39	Milagro reposado (100% de agave)	1	[{"added": {}}]	13	1
+197	2018-11-28 10:54:38.210966+00	40	Patron Silver	1	[{"added": {}}]	13	1
+198	2018-11-28 10:54:49.882886+00	41	London Hill	1	[{"added": {}}]	13	1
+199	2018-11-28 10:55:00.848569+00	42	Hendrick’s	1	[{"added": {}}]	13	1
+200	2018-11-28 10:55:11.314003+00	43	Monkey 47	1	[{"added": {}}]	13	1
+201	2018-11-28 10:55:23.562643+00	44	Santiago de Cuba Carta Blanca	1	[{"added": {}}]	13	1
+202	2018-11-28 10:55:45.942166+00	45	Santiago de Cuba Anejo	1	[{"added": {}}]	13	1
+203	2018-11-28 10:56:05.469568+00	46	Plantation 3 stars	1	[{"added": {}}]	13	1
+204	2018-11-28 10:56:17.309949+00	47	Plantation original dark	1	[{"added": {}}]	13	1
+205	2018-11-28 10:56:28.982089+00	48	Staritsky&Levitsky	1	[{"added": {}}]	13	1
+206	2018-11-28 10:56:40.465339+00	49	Grey Goose	1	[{"added": {}}]	13	1
+207	2018-11-28 10:56:51.581186+00	50	Finlandia Cranberry white	1	[{"added": {}}]	13	1
+208	2018-11-28 10:57:03.300666+00	51	Tanqueray Sterling	1	[{"added": {}}]	13	1
+209	2018-11-28 10:57:19.801441+00	52	Martini (bianko, dry)	1	[{"added": {}}]	13	1
+210	2018-11-28 10:57:30.789932+00	53	Campari	1	[{"added": {}}]	13	1
+211	2018-11-28 10:57:40.897003+00	54	Jagermeister	1	[{"added": {}}]	13	1
+212	2018-11-28 10:57:53.99986+00	55	Becherovka	1	[{"added": {}}]	13	1
+213	2018-11-28 11:05:54.048091+00	48	Il Leo Chianti Superiore (Ruffino) DOCG	1	[{"added": {}}]	11	1
+214	2018-11-28 11:06:50.33729+00	49	Poggio alla Guardia (Rocca di Frassinello) DOC	1	[{"added": {}}]	11	1
+215	2018-11-28 11:07:27.299598+00	50	Vagona (Aia Vecchia) IGT	1	[{"added": {}}]	11	1
+216	2018-11-28 11:08:21.932153+00	51	Brunello di Montalcino (Sassetti Livio) DOCG	1	[{"added": {}}]	11	1
+217	2018-11-28 11:09:29.828411+00	52	Duca di Castelmonte Tareni Inzolia Sicilian (Carlo Pellegrino) IGT	1	[{"added": {}}]	11	1
+218	2018-11-28 11:10:08.095175+00	53	Moscato di Noto (Planeta) DOC	1	[{"added": {}}]	11	1
+219	2018-11-28 11:11:03.567865+00	54	Duca di Castelmonte Dinari Nero d'Avola Siciliane (Carlo Pellegrino) IGT	1	[{"added": {}}]	11	1
+220	2018-11-28 11:11:27.570326+00	55	Plumbago (Planeta) DOC	1	[{"added": {}}]	11	1
+221	2018-11-28 11:12:24.263782+00	56	Sauvignon Blanc Marlborough Sun (Saint Clair)	1	[{"added": {}}]	11	1
+222	2018-11-28 11:12:52.76069+00	57	Sauvignon Rose Marlborough Sun (Saint Clair)	1	[{"added": {}}]	11	1
+223	2018-11-28 11:13:41.350001+00	58	Stump Jump Red Grenache Shiraz Mourvedre (d'Arnberg)	1	[{"added": {}}]	11	1
+224	2018-11-28 11:14:32.203438+00	59	Sauvignon Blanc Reserva (Montes)	1	[{"added": {}}]	11	1
+225	2018-11-28 11:14:56.789142+00	60	Caberne Sauvignon Reserva (Montes)	1	[{"added": {}}]	11	1
+226	2018-11-28 11:15:31.520034+00	61	Malbec Selected Callia (Salentein)	1	[{"added": {}}]	11	1
+227	2018-11-28 11:16:12.276095+00	62	Chenin Blanc Savanha (Spier Winesa)	1	[{"added": {}}]	11	1
+228	2018-11-28 11:16:39.997533+00	63	Pinotage (The Grinder)	1	[{"added": {}}]	11	1
+229	2018-11-28 11:17:07.122476+00	64	Colossal Reserva (Casa Santos Lima)	1	[{"added": {}}]	11	1
+230	2018-11-28 11:22:14.053759+00	1	Аперетиви	2	[{"changed": {"fields": ["description", "description_eng"]}}]	12	1
+231	2018-11-28 11:22:22.238815+00	2	Горілка	2	[{"changed": {"fields": ["description", "description_eng"]}}]	12	1
+232	2018-11-28 11:22:29.729508+00	3	Ром	2	[{"changed": {"fields": ["description", "description_eng"]}}]	12	1
+233	2018-11-28 11:22:37.199466+00	4	Джин	2	[{"changed": {"fields": ["description", "description_eng"]}}]	12	1
+234	2018-11-28 11:22:42.058628+00	5	Текіла	2	[{"changed": {"fields": ["description", "description_eng"]}}]	12	1
+235	2018-11-28 11:22:51.99181+00	6	Віскі	2	[{"changed": {"fields": ["description", "description_eng"]}}]	12	1
+236	2018-11-28 11:22:56.878262+00	7	Коньяк	2	[{"changed": {"fields": ["description", "description_eng"]}}]	12	1
+237	2018-11-28 11:23:01.546803+00	8	Бренді	2	[{"changed": {"fields": ["description", "description_eng"]}}]	12	1
+238	2018-11-28 11:23:06.237914+00	9	Лікери	2	[{"changed": {"fields": ["description", "description_eng"]}}]	12	1
+239	2018-11-28 11:23:14.980124+00	10	Спеціальні вина	2	[{"changed": {"fields": ["description", "description_eng"]}}]	12	1
+240	2018-11-28 11:32:30.563758+00	21	Riesling (Dr. Loosen) Qualitatswein	2	[{"changed": {"fields": ["price"]}}]	11	1
 \.
 
 
@@ -1096,6 +1219,21 @@ tq5udrtki3ysrrjhgll1arzsqp5fnc0y	OWI0MmY4N2Y4MjZiNjI3MGIyODU3YzFiZjM1NjBiMDAyNTN
 --
 
 COPY public.drink_categories (id, title, title_eng, description, description_eng, small_description, parent_id) FROM stdin;
+11	Пиво	Пиво			f	\N
+12	Вода	Вода			f	\N
+13	Свіжовижатий сік	Свіжовижатий сік			f	\N
+14	Кава ILLY	Кава ILLY			f	\N
+15	Чай	Чай			f	\N
+1	Аперетиви	Аперетиви	(ціна за 50мл.)	(ціна за 50мл.)	f	\N
+2	Горілка	Горілка	(ціна за 50мл.)	(ціна за 50мл.)	f	\N
+3	Ром	Ром	(ціна за 50мл.)	(ціна за 50мл.)	f	\N
+4	Джин	Джин	(ціна за 50мл.)	(ціна за 50мл.)	f	\N
+5	Текіла	Текіла	(ціна за 50мл.)	(ціна за 50мл.)	f	\N
+6	Віскі	Віскі	(ціна за 50мл.)	(ціна за 50мл.)	f	\N
+7	Коньяк	Коньяк	(ціна за 50мл.)	(ціна за 50мл.)	f	\N
+8	Бренді	Бренді	(ціна за 50мл.)	(ціна за 50мл.)	f	\N
+9	Лікери	Лікери	(ціна за 50мл.)	(ціна за 50мл.)	f	\N
+10	Спеціальні вина	Спеціальні вина	(ціна за 50мл.)	(ціна за 50мл.)	f	\N
 \.
 
 
@@ -1104,6 +1242,61 @@ COPY public.drink_categories (id, title, title_eng, description, description_eng
 --
 
 COPY public.drink_items (id, title, title_eng, content, price, weight, category_id, content_eng) FROM stdin;
+1	Loose tea Daman	Loose tea Daman		68		15	
+2	Espresso	Espresso		46		14	
+3	Americano	Americano		46		14	
+4	Espresso Macchiato	Espresso Macchiato		46		14	
+5	Cappuccino	Cappuccino		56		14	
+6	Latte Macchiato	Latte Macchiato		56		14	
+7	Молоко (100мл.)	Молоко (100мл.)		10		14	
+8	Апельсин, яблоко, грейпфрут, морква	Апельсин, яблоко, грейпфрут, морква		72		13	
+9	Селера	Селера		110		13	
+10	Ананас	Ананас		164		13	
+11	Rocchetta(Italy)	Rocchetta(Italy)		78	0.5	12	
+12	VODA UA (Ukraine)	VODA UA (Ukraine)		34	0.4	12	
+13	Coca Cola	Coca Cola		32	0.25	12	
+14	Royal Club Tonic water	Royal Club Tonic water		50	0.33	12	
+15	Royal Club Soda water	Royal Club Soda water		50	0.33	12	
+16	Leffe (light, dark)	Leffe (light, dark)		88	0.33	11	
+17	Palm (n/a)	Palm (n/a)		86	0.25	11	
+18	Sherry Oloroso Alburejo	Sherry Oloroso Alburejo		76		10	
+19	Port Sandeman Towny 10 y.o	Port Sandeman Towny 10 y.o		98		10	
+20	Dulce de Moscatel Gran Feudo (Bodegas Julian Chivite)	Dulce de Moscatel Gran Feudo (Bodegas Julian Chivite)		76		10	
+21	Baileys	Baileys		98		9	
+22	Cointreau	Cointreau		104		9	
+23	Kahlua	Kahlua		96		9	
+24	Sambuca Ramazotti	Sambuca Ramazotti		92		9	
+25	Grappa Berta (Sant’Antone, Valdavi)	Grappa Berta (Sant’Antone, Valdavi)		210		8	
+26	Calvados Reserver Pays d’Auge (Christian Droun)	Calvados Reserver Pays d’Auge (Christian Droun)		178		8	
+27	Ferrand Ambre	Ferrand Ambre		228		7	
+28	H by Hine VSOP	H by Hine VSOP		232		7	
+29	Cigar Reserve Hine XO	Cigar Reserve Hine XO		350		7	
+30	Jack Daniel’s	Jack Daniel’s		98		6	
+31	Four Roses Small Batch	Four Roses Small Batch		140		6	
+32	Loch Lomond Single Grain	Loch Lomond Single Grain		90		6	
+33	Loch Lomond Original	Loch Lomond Original		110		6	
+34	Jameson Black Barrel	Jameson Black Barrel		170		6	
+35	Arran Lochranza Reserve	Arran Lochranza Reserve		180		6	
+36	BenRiach Sherry 12 y.o	BenRiach Sherry 12 y.o		240		6	
+37	Benromach Sassicaia Wood Finish	Benromach Sassicaia Wood Finish		290		6	
+38	Milagro silver (100% de agave)	Milagro silver (100% de agave)		144		5	
+39	Milagro reposado (100% de agave)	Milagro reposado (100% de agave)		122		5	
+40	Patron Silver	Patron Silver		150		5	
+41	London Hill	London Hill		72		4	
+42	Hendrick’s	Hendrick’s		162		4	
+43	Monkey 47	Monkey 47		198		4	
+44	Santiago de Cuba Carta Blanca	Santiago de Cuba Carta Blanca		50		3	
+45	Santiago de Cuba Anejo	Santiago de Cuba Anejo		50		3	
+46	Plantation 3 stars	Plantation 3 stars		86		3	
+47	Plantation original dark	Plantation original dark		86		3	
+48	Staritsky&Levitsky	Staritsky&Levitsky		88		2	
+49	Grey Goose	Grey Goose		124		2	
+50	Finlandia Cranberry white	Finlandia Cranberry white		58		2	
+51	Tanqueray Sterling	Tanqueray Sterling		76		2	
+52	Martini (bianko, dry)	Martini (bianko, dry)		44		1	
+53	Campari	Campari		80		1	
+54	Jagermeister	Jagermeister		76		1	
+55	Becherovka	Becherovka		58		1	
 \.
 
 
@@ -1236,9 +1429,50 @@ COPY public.wine_items (id, title, title_eng, content, price, weight, category_i
 18	Reserve de l'Aube Pere Anselme Syrah-Merlo (Brotte) AOP	Reserve de l'Aube Pere Anselme Syrah-Merlo (Brotte) AOP		540/72		6	
 19	Chateau L'Ermitage (Ambiance Rhone Terroirs) AOP	Chateau L'Ermitage (Ambiance Rhone Terroirs) AOP		690		6	
 20	Peter Nicolay Riesling Trocken (Dr. Heidennemans-Bergweiler)	Peter Nicolay Riesling Trocken (Dr. Heidennemans-Bergweiler)		600/80		7	
-21	Riesling (Dr. Loosen) Qualitatswein	Riesling (Dr. Loosen) Qualitatswein		540/72 грн		7	
 22	Gewurztraminer Villa Wolf (J.L.Wolf) Qualitatswein	Gewurztraminer Villa Wolf (J.L.Wolf) Qualitatswein		540/72		7	
 23	Pinot Noir (Villa Wolf) Qualitatswein	Pinot Noir (Villa Wolf) Qualitatswein		570/76		7	
+24	Шардоне сухое сортовое - Chardonnay (Колонист)	Шардоне сухое сортовое - Chardonnay (Колонист)		420		8	
+25	Каберне сухое сортовое - Cabernet (Колонист)	Каберне сухое сортовое - Cabernet (Колонист)		420		8	
+26	Одеське чорне сухе сортове	Одеське чорне сухе сортове		420/56		8	
+27	White House Wine	White House Wine		240/120		9	
+28	Red House Wine	Red House Wine		240/120		9	
+29	Sancerre Le Chene (Lucien Crochet)	Sancerre Le Chene (Lucien Crochet)		1410/94		10	
+30	Alastro (Planeta)	Alastro (Planeta)		1050/70		10	
+31	Corvar Rosso Veroneze (Zeni)	Corvar Rosso Veroneze (Zeni)		1680/112		10	
+32	Sangiovese Gamla (Golan Heights Winery)	Sangiovese Gamla (Golan Heights Winery)		1020/68		10	
+33	Pecorino Bianco (Illuminati Dino) DOC	Pecorino Bianco (Illuminati Dino) DOC		780/104		12	
+34	Santoro Muntepulciano d'Abruzzo (San Marzano) DOC	Santoro Muntepulciano d'Abruzzo (San Marzano) DOC		600/80		12	
+35	Santoro Sangiovese Terre di Chieti (San Marzano) IGT	Santoro Sangiovese Terre di Chieti (San Marzano) IGT		600/80		12	
+36	Pfefferer Moscato Classic Line (Colterenzio) DOC	Pfefferer Moscato Classic Line (Colterenzio) DOC		720/96		13	
+37	Muller Thurgau Dolomiti Classic Line (Colterenzio)	Muller Thurgau Dolomiti Classic Line (Colterenzio)		720/96		13	
+38	Gavi il Doge (Broglia) DOCG	Gavi il Doge (Broglia) DOCG		720/96		14	
+39	Gavi Villa Scolca (La Scolca) DOCG	Gavi Villa Scolca (La Scolca) DOCG		1190		14	
+40	Dolcetto d'Alba Munfrina (Pelissero) DOC	Dolcetto d'Alba Munfrina (Pelissero) DOC		720/96		14	
+41	Barbaresco Roberto Fossati (Guido Mazzarello) DOCG	Barbaresco Roberto Fossati (Guido Mazzarello) DOCG		1360		14	
+42	Barolo Serralunga (Schiavenza) DOCG	Barolo Serralunga (Schiavenza) DOCG		2260		14	
+43	Pinot GR.delle Venezia Fiorile Cesari IGT	Pinot GR.delle Venezia Fiorile Cesari IGT		540/72		15	
+44	Soave Il Seleze (I Stefanini) DOC	Soave Il Seleze (I Stefanini) DOC		570/76		15	
+45	Valpolicella, Cantine di Ora (Schenk) DOC	Valpolicella, Cantine di Ora (Schenk) DOC		540/72		15	
+46	Amarona della Valpolicella Classico (Cesari) DOCG	Amarona della Valpolicella Classico (Cesari) DOCG		1920		15	
+47	Chianto Classico Riserva (Schenk) DOCG	Chianto Classico Riserva (Schenk) DOCG		870		16	
+48	Il Leo Chianti Superiore (Ruffino) DOCG	Il Leo Chianti Superiore (Ruffino) DOCG		660/88		16	
+49	Poggio alla Guardia (Rocca di Frassinello) DOC	Poggio alla Guardia (Rocca di Frassinello) DOC		870		16	
+50	Vagona (Aia Vecchia) IGT	Vagona (Aia Vecchia) IGT		840		16	
+51	Brunello di Montalcino (Sassetti Livio) DOCG	Brunello di Montalcino (Sassetti Livio) DOCG		2280		16	
+52	Duca di Castelmonte Tareni Inzolia Sicilian (Carlo Pellegrino) IGT	Duca di Castelmonte Tareni Inzolia Sicilian (Carlo Pellegrino) IGT		480/64		17	
+53	Moscato di Noto (Planeta) DOC	Moscato di Noto (Planeta) DOC		980		17	
+54	Duca di Castelmonte Dinari Nero d'Avola Siciliane (Carlo Pellegrino) IGT	Duca di Castelmonte Dinari Nero d'Avola Siciliane (Carlo Pellegrino) IGT		720/96		17	
+55	Plumbago (Planeta) DOC	Plumbago (Planeta) DOC		970		17	
+56	Sauvignon Blanc Marlborough Sun (Saint Clair)			690/92		18	
+57	Sauvignon Rose Marlborough Sun (Saint Clair)	Sauvignon Rose Marlborough Sun (Saint Clair)		720/96		18	
+58	Stump Jump Red Grenache Shiraz Mourvedre (d'Arnberg)			720/96		19	
+59	Sauvignon Blanc Reserva (Montes)	Sauvignon Blanc Reserva (Montes)		540/72		20	
+60	Caberne Sauvignon Reserva (Montes)	Caberne Sauvignon Reserva (Montes)		540/72		20	
+61	Malbec Selected Callia (Salentein)			600/80		21	
+62	Chenin Blanc Savanha (Spier Winesa)			540/72		22	
+63	Pinotage (The Grinder)	Pinotage (The Grinder)		540/72		22	
+64	Colossal Reserva (Casa Santos Lima)			540/72		23	
+21	Riesling (Dr. Loosen) Qualitatswein	Riesling (Dr. Loosen) Qualitatswein		540/72		7	
 \.
 
 
@@ -1295,7 +1529,7 @@ SELECT pg_catalog.setval('public.breakfast_items_id_seq', 13, true);
 -- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
 
-SELECT pg_catalog.setval('public.django_admin_log_id_seq', 117, true);
+SELECT pg_catalog.setval('public.django_admin_log_id_seq', 240, true);
 
 
 --
@@ -1316,14 +1550,14 @@ SELECT pg_catalog.setval('public.django_migrations_id_seq', 40, true);
 -- Name: drink_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
 
-SELECT pg_catalog.setval('public.drink_categories_id_seq', 1, false);
+SELECT pg_catalog.setval('public.drink_categories_id_seq', 15, true);
 
 
 --
 -- Name: drink_items_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
 
-SELECT pg_catalog.setval('public.drink_items_id_seq', 1, false);
+SELECT pg_catalog.setval('public.drink_items_id_seq', 55, true);
 
 
 --
@@ -1351,7 +1585,7 @@ SELECT pg_catalog.setval('public.wine_categories_id_seq', 23, true);
 -- Name: wine_items_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
 
-SELECT pg_catalog.setval('public.wine_items_id_seq', 23, true);
+SELECT pg_catalog.setval('public.wine_items_id_seq', 64, true);
 
 
 --
