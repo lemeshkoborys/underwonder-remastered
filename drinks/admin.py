@@ -23,14 +23,10 @@ class ItemFilter(admin.SimpleListFilter):
         if self.value():
             print (self.value()) 
             category = DrinkCategory.objects.get(pk=self.value())
-            print(category.get_childs)
+            merge_query = queryset.filter(category=category)
             for subcategory in category.get_childs:
-                if category.get_items:
-                    return subcategory.get_items | category.get_items
-                else:
-                    return subcategory.get_items
-                
-            return queryset.filter(category=category)
+                merge_query = merge_query | subcategory.get_items
+            return merge_query
         else:
             return queryset
 
