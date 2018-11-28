@@ -25,9 +25,9 @@
         </div>
     {% endfor %}
 {% else %}
-        <h3 class="subcategory-title">{{subcategory.title}}
+        <h3 class="subcategory-title">{{category.title}}
         {% if subcategory.description %}
-            <span class="wine-badge">{{subcategory.description}}</span>
+            <span class="wine-badge">{{category.description}}</span>
         {% endif %}
         </h3>
     {% for item in category.get_items|dictsort:"id" %}
