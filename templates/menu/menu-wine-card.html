@@ -1,4 +1,3 @@
-<div class="subcategory">
 {% if category.get_childs %}
     {% for subcategory in category.get_childs|dictsort:"id" %}
         <div class="subcategory">
@@ -52,4 +51,4 @@
         </div>
     {% endfor %}
 {% endif %}
-</div>
+
