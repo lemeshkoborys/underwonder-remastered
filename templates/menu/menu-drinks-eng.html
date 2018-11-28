@@ -29,7 +29,7 @@
 {% else %}
     <h3 class="category-title">{{category.title_eng}}
     {% if subcategory.description %}
-        <span class="wine-badge">{{subcategory.description_eng}}</span>
+        <span class="wine-badge">{{subcategory.description}}</span>
     {% endif %}
     </h3>
     {% for item in category.get_items|dictsort:"id" %}
