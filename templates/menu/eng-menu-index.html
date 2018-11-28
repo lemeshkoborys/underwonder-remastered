@@ -39,7 +39,7 @@
         <span>12<sup>00</sup></span>
       </span>
       <div class="subcategory">
-        {% for item in breakasts %}
+        {% for item in breakasts|dictsort:"id" %}
           {% include 'menu/menu-breakfasts-eng.html' %}
         {% endfor %}
       </div>
@@ -50,7 +50,7 @@
   <div class="main-menu">
     <h3 class="container-title">Main menu</h3>
     <div class="container-cols-2">
-      {% for category in main_categories %}
+      {% for category in main_categories|dictsort:"id" %}
         {% include 'menu/menu-main-section-eng.html' %}
       {% endfor %}
     </div>
@@ -59,7 +59,7 @@
   <div class="wine">
     <img class="wine-img" src="{% static 'img/wine.jpeg' %}" alt="wine underwonder">
     <div class="container-cols-2">
-      {% for category in wine_card %}
+      {% for category in wine_card|dictsort:"id" %}
         {% include 'menu/menu-wine-card-eng.html' %}
       {% endfor %}
     </div>
@@ -71,7 +71,7 @@
 
   <div class="beverages">
     <div class="container-cols-3">
-      {% for category in drinks %}
+      {% for category in drinks|dictsort:"id" %}
         {% include 'menu/menu-drinks-eng.html' %}
       {% endfor %}
       </div>

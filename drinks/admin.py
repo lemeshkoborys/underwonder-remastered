@@ -3,7 +3,26 @@ from .models import DrinkItem, DrinkCategory
 from .forms import DrinkCategoryForm, DrinkItemForm
 from django.urls import reverse
 from django.utils.html import mark_safe
-from wine_card.admin import CategoryFilter
+
+
+class CategoryFilter(admin.SimpleListFilter):
+
+    title = 'Категория'
+    parameter_name = 'category'
+
+    def lookups(self, request, model_admin):
+        list_tuple = []
+        queryset = DrinkCategory.objects.filter(parent=None)
+        for category in queryset:
+            #print category
+            list_tuple.append((category.id, category.title))
+        return sorted(list_tuple, key=lambda tp: tp[1])
+
+    def queryset(self, request, queryset):
+        if self.value():
+            return queryset.filter(parent=self.value())
+        else:
+            return queryset
 
 
 class ItemFilter(admin.SimpleListFilter):

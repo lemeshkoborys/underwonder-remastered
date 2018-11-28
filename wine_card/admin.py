@@ -5,22 +5,6 @@ from django.urls import reverse
 from django.utils.html import mark_safe
 
 
-def list_to_queryset(model, data):
-    from django.db.models.base import ModelBase
-    
-    if not isinstance(model, ModelBase):
-        raise ValueError(
-            "%s must be Model" % model
-        )
-    if not isinstance(data, list):
-        raise ValueError(
-            "%s must be Dictionary Object" % data
-        )
-    
-    pk_list = [obj.id for obj in data]
-    return model.objects.filter(id__in=pk_list)
-
-
 class CategoryFilter(admin.SimpleListFilter):
 
     title = 'Категория'
