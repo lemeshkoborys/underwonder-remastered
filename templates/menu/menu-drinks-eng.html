@@ -2,7 +2,7 @@
 {% if category.get_childs %}
     {% for subcategory in category.get_childs|dictsort:"id" %}
         {% if forloop.first %}
-            <h3 class="subcategory-title">{{category.title-eng}}
+            <h3 class="subcategory-title">{{category.title_eng}}
         {% if subcategory.description %}
             <span class="wine-badge">{{category.description_eng}}</span>
         {% endif %}
@@ -35,7 +35,7 @@
     {% for item in category.get_items|dictsort:"id" %}
         <div class="item">
             <p class="item-title">{{item.title_eng}}</p>
-            {% if title.content %}
+            {% if title.content_eng %}
                 <p class="item-description">
                 ({{title.content_eng}})
                 </p>
