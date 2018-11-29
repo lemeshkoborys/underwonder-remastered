@@ -12,9 +12,9 @@ WORKDIR /underwonder
 COPY Pipfile /underwonder
 COPY Pipfile.lock /underwonder
 RUN pip install pipenv
-RUN pipenv install --pre
-#TODO normal pipenv flow
+RUN pipenv install --dev
 COPY . /underwonder
+RUN pipenv run ./manage.py collectstatic --no-input
 
-EXPOSE 8080
-CMD ["pipenv", "run", "python", "manage.py", "runserver", "0.0.0.0:8080"]
+EXPOSE 8000
+CMD ["gunicorn", "--bind", ":8000", "underwonder_remastered.wsgi:application"]

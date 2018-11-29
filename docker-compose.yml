@@ -4,43 +4,45 @@ services:
 
   db:
     image: postgres:10
-    ports:
-      - "5432:5432"
     environment:
       - POSTGRES_USER=underwonder_remastered
       - POSTGRES_PASSWORD=RNq?YyMN=FMwr2tD
       - POSTGRES_DB=underwonder_remastered
+    networks:
+      - db_network
+    volumes:
+      - db_volume
+
   underwonder:
     build: .
     volumes:
       - .:/underwonder
-      - ./static:/underwonder/static
-    ports:
-      - 8080:8080
-    # networks:  # <-- here
-    #   # - nginx_network
-    #   - db_network
+      - static_volume:/underwonder/staticfiles
+    networks:  # <-- here
+      - nginx_network
+      - db_network
     depends_on:
       - db
 
-  # nginx:
-  #   image: nginx:1.13
-  #   ports:
-  #     - 8080:81
-  #   volumes:
-  #     - ./config/nginx/conf.d:/etc/nginx/conf.d
-  #     - static_volume:/underwonder/static
-  #   depends_on:
-  #     - underwonder
-  #   networks:  # <-- here
-  #     - nginx_network
+  nginx:
+    image: nginx:1.13
+    ports:
+      - 8000:80
+    volumes:
+      - ./config/nginx/conf.d:/etc/nginx/conf.d
+      - static_volume:/underwonder/staticfiles
+    depends_on:
+      - underwonder
+    networks:  # <-- here
+      - nginx_network
 
-# networks:  # <-- and here
-#   # nginx_network:
-#   #   driver: bridge
-#   # db_network:
-#   #   driver: bridge
+networks:  # <-- and here
+  nginx_network:
+    driver: bridge
+  db_network:
+    driver: bridge
 
 volumes:
-  # db_volume:
+  db_volume:
   static_volume:
+
