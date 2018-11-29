@@ -17,4 +17,4 @@ COPY . /underwonder
 RUN pipenv run ./manage.py collectstatic --no-input
 
 EXPOSE 8000
-CMD ["gunicorn", "--bind", ":8000", "underwonder_remastered.wsgi:application"]
+CMD ["pipenv", "run", "gunicorn", "--bind", ":8000", "underwonder_remastered.wsgi:application"]
