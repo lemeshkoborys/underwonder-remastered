@@ -17,9 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 import main_menu.urls
 import index.urls
+from django.views.generic.base import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('index.urls'), name='index'),
-    path('menu/', include('main_menu.urls'))
+    path('menu/', include('main_menu.urls')),
+    path('data/menu', RedirectView.as_view(url='/menu/'), name='redirect-to-menu'),
+    path('data/menu.pdf', RedirectView.as_view(url='/menu/'), name='redirect-to-menu-frompdf')
 ]
