@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import MenuItem, MenuCategory
 from django.urls import reverse
 from django.utils.html import mark_safe
-from .forms import MenuCategoryForm
+from .forms import MenuCategoryForm, MenuItemForm
 
 
 
@@ -53,6 +53,8 @@ class ItemFilter(admin.SimpleListFilter):
 
 @admin.register(MenuItem)
 class MenuItemModelAdmin(admin.ModelAdmin):
+
+    form = MenuItemForm
 
     list_display = (
         'title',
