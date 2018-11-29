@@ -21,6 +21,9 @@ class Section(models.Model):
     content_eng = models.TextField(
         verbose_name='Текст секции ENG'
     )
+
+    def __str__(self):
+        return self.title
     
 
     
