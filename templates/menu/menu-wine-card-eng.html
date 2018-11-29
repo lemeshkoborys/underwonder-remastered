@@ -3,13 +3,13 @@
         <div class="subcategory">
         {% if forloop.first %}
             <h3 class="category-title">{{category.title_eng}}
-            {% if category.description %}
+            {% if category.description_eng %}
                 <span class="wine-badge">{{category.description_eng}}</span>
             {% endif %}
             </h3>
         {% endif %}
         <h3 class="subcategory-title">{{subcategory.title_eng}}
-        {% if subcategory.description %}
+        {% if subcategory.description_eng %}
             <span class="wine-badge">{{subcategory.description_eng}}</span>
         {% endif %}
         </h3>
@@ -31,15 +31,15 @@
     {% endfor %}
 {% elif not category.parent%}
     <div class="subcategory">
-    <h3 class="category-title">{{category.title_eng}}
-    {% if category.description %}
+    <h3 class="category-title">{{category.title}}
+    {% if category.description_eng %}
         <span class="wine-badge">{{category.description_eng}}</span>
     {% endif %}
     </h3>
     {% for item in category.get_items|dictsort:"id" %}
         <div class="item">
             <p class="item-title">{{item.title_eng}}</p>
-            {% if title.content %}
+            {% if title.content_eng %}
                 <p class="item-description">
                 ({{title.content_eng}})
                 </p>
@@ -52,3 +52,4 @@
     {% endfor %}
     </div>
 {% endif %}
+
