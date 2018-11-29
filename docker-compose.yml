@@ -4,7 +4,7 @@ services:
 
   db:
     image: postgres:10
-      environment:
+    environment:
       - POSTGRES_USER=underwonder_remastered
       - POSTGRES_PASSWORD=RNq?YyMN=FMwr2tD
       - POSTGRES_DB=underwonder_remastered
