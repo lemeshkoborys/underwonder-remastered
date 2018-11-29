@@ -119,13 +119,6 @@ class AbstractCategory(models.Model):
         verbose_name='Описание категории ENG'
     )
 
-    small_description = models.BooleanField(
-        default=False,
-        verbose_name='Описание маленьким текстом',
-        help_text='Делает описание меньше. Пример \
-        описание у спиртных напитков в красных скобках'
-    )
-
     parent = models.ForeignKey(
         'self',
         verbose_name='Родительская категория',
