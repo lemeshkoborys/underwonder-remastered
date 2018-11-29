@@ -1,4 +1,4 @@
-from django.urls import path,
+from django.urls import path
 from .views import render_menu, render_menu_eng
 from django.views.generic.base import RedirectView
 
