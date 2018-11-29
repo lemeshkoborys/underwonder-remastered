@@ -21,7 +21,6 @@ from django.views.generic.base import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('<string>/', RedirectView.as_view(url='/'), name='redirect-to-home'),
     path('', include('index.urls'), name='index'),
     path('menu/', include('main_menu.urls')),
     path('data/menu', RedirectView.as_view(url='/menu/'), name='redirect-to-menu'),
