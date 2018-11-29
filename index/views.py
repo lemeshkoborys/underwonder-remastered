@@ -1,5 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Section
+
+def view_404(request):
+    return redirect('/')
 
 def render_index(request):
     about_section = Section.objects.get(title="Про нас")

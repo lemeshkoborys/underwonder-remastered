@@ -19,6 +19,8 @@ import main_menu.urls
 import index.urls
 from django.views.generic.base import RedirectView
 
+handler404 = 'index.views.view_404'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('index.urls'), name='index'),
