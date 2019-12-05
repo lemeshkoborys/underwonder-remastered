@@ -10,7 +10,9 @@ services:
       - db_volume
 
   underwonder:
-    build: .
+    build:
+      context: .
+      dockerfile: ./Dockerfile.db
     volumes:
       - .:/underwonder
       - static_volume:/underwonder/staticfiles
