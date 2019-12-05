@@ -10,7 +10,6 @@ RUN apt-get update \
 
 WORKDIR /underwonder
 COPY requirements.txt /underwonder
-COPY Pipfile.lock /underwonder
 RUN pip install -r requirements.txt
 COPY . /underwonder
 
