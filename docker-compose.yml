@@ -4,10 +4,6 @@ services:
 
   db:
     image: postgres:10
-    environment:
-      - POSTGRES_USER=underwonder_remastered
-      - POSTGRES_PASSWORD=RNq?YyMN=FMwr2tD
-      - POSTGRES_DB=underwonder_remastered
     networks:
       - db_network
     volumes:
@@ -18,7 +14,7 @@ services:
     volumes:
       - .:/underwonder
       - static_volume:/underwonder/staticfiles
-    networks:  # <-- here
+    networks:
       - nginx_network
       - db_network
     depends_on:

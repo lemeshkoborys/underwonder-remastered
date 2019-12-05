@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 COPY . /underwonder
 
 EXPOSE 8000
-CMD ["pipenv", "run", "gunicorn", "--bind", ":8000", "underwonder_remastered.wsgi:application"]
+CMD ["gunicorn", "--bind", ":8000", "underwonder_remastered.wsgi:application"]
