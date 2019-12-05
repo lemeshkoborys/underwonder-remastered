@@ -1,0 +1,1 @@
+default_app_config = 'underwonder_remastered.main_menu.apps.MainMenuConfig'

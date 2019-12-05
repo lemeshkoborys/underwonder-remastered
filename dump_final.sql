@@ -1329,12 +1329,9 @@ COPY public.django_admin_log (id, action_time, object_id, object_repr, action_fl
 359	2018-11-29 19:53:36.528025+00	1	Аперетиви	2	[{"changed": {"fields": ["title_eng"]}}]	12	1
 360	2018-11-29 19:54:11.109725+00	3	Франція	2	[{"changed": {"fields": ["title_eng"]}}]	10	1
 \.
-
-
 --
 -- Data for Name: django_content_type; Type: TABLE DATA; Schema: public; Owner: underwonder_remastered
 --
-
 COPY public.django_content_type (id, app_label, model) FROM stdin;
 1	admin	logentry
 2	auth	permission
@@ -1351,12 +1348,9 @@ COPY public.django_content_type (id, app_label, model) FROM stdin;
 13	drinks	drinkitem
 14	index	section
 \.
-
-
 --
 -- Data for Name: django_migrations; Type: TABLE DATA; Schema: public; Owner: underwonder_remastered
 --
-
 COPY public.django_migrations (id, app, name, applied) FROM stdin;
 1	contenttypes	0001_initial	2018-11-28 02:06:36.307477+00
 2	auth	0001_initial	2018-11-28 02:06:36.376857+00
@@ -1408,24 +1402,18 @@ COPY public.django_migrations (id, app, name, applied) FROM stdin;
 48	main_menu	0007_remove_menucategory_small_description	2018-11-29 11:22:56.04958+00
 49	wine_card	0007_remove_winecategory_small_description	2018-11-29 11:22:56.057885+00
 \.
-
-
 --
 -- Data for Name: django_session; Type: TABLE DATA; Schema: public; Owner: underwonder_remastered
 --
-
 COPY public.django_session (session_key, session_data, expire_date) FROM stdin;
 tq5udrtki3ysrrjhgll1arzsqp5fnc0y	OWI0MmY4N2Y4MjZiNjI3MGIyODU3YzFiZjM1NjBiMDAyNTNlNWE1ODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxNTE2ODYyM2I1ZTExN2FkMzFiYmU2ZTg0MTkwMmI0MmE4MTY0N2Y4In0=	2018-12-12 02:10:07.629775+00
 59zbwkvi8ssx3eo1h6nlhjtjdqr8jdh5	OWI0MmY4N2Y4MjZiNjI3MGIyODU3YzFiZjM1NjBiMDAyNTNlNWE1ODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxNTE2ODYyM2I1ZTExN2FkMzFiYmU2ZTg0MTkwMmI0MmE4MTY0N2Y4In0=	2018-12-12 13:14:55.068952+00
 zvxfwk77pryabbkoexgcproytpors1am	OWI0MmY4N2Y4MjZiNjI3MGIyODU3YzFiZjM1NjBiMDAyNTNlNWE1ODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxNTE2ODYyM2I1ZTExN2FkMzFiYmU2ZTg0MTkwMmI0MmE4MTY0N2Y4In0=	2018-12-13 16:52:50.383967+00
 mz9y7h2d5rqvdjeojbxz2hjno9w3yxxi	OWI0MmY4N2Y4MjZiNjI3MGIyODU3YzFiZjM1NjBiMDAyNTNlNWE1ODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxNTE2ODYyM2I1ZTExN2FkMzFiYmU2ZTg0MTkwMmI0MmE4MTY0N2Y4In0=	2018-12-13 19:36:23.222397+00
 \.
-
-
 --
 -- Data for Name: drink_categories; Type: TABLE DATA; Schema: public; Owner: underwonder_remastered
 --
-
 COPY public.drink_categories (id, title, title_eng, description, description_eng, parent_id) FROM stdin;
 15	Чай	Tee			\N
 14	Кава ILLY	ILLY Coffee			\N
@@ -1443,87 +1431,78 @@ COPY public.drink_categories (id, title, title_eng, description, description_eng
 2	Горілка	Vodka	(ціна за 50мл.)	(ціна за 50мл.)	\N
 1	Аперетиви	Aperitives	(ціна за 50мл.)	(ціна за 50мл.)	\N
 \.
-
-
 --
 -- Data for Name: drink_items; Type: TABLE DATA; Schema: public; Owner: underwonder_remastered
 --
-
 COPY public.drink_items (id, title, title_eng, content, price, weight, category_id, content_eng) FROM stdin;
-1	Loose tea Daman	Loose tea Daman		68		15	
-2	Espresso	Espresso		46		14	
-3	Americano	Americano		46		14	
-4	Espresso Macchiato	Espresso Macchiato		46		14	
-5	Cappuccino	Cappuccino		56		14	
-6	Latte Macchiato	Latte Macchiato		56		14	
-7	Молоко (100мл.)	Молоко (100мл.)		10		14	
-8	Апельсин, яблоко, грейпфрут, морква	Апельсин, яблоко, грейпфрут, морква		72		13	
-9	Селера	Селера		110		13	
-10	Ананас	Ананас		164		13	
-11	Rocchetta(Italy)	Rocchetta(Italy)		78	0.5	12	
-12	VODA UA (Ukraine)	VODA UA (Ukraine)		34	0.4	12	
-13	Coca Cola	Coca Cola		32	0.25	12	
-14	Royal Club Tonic water	Royal Club Tonic water		50	0.33	12	
-15	Royal Club Soda water	Royal Club Soda water		50	0.33	12	
-16	Leffe (light, dark)	Leffe (light, dark)		88	0.33	11	
-17	Palm (n/a)	Palm (n/a)		86	0.25	11	
-18	Sherry Oloroso Alburejo	Sherry Oloroso Alburejo		76		10	
-19	Port Sandeman Towny 10 y.o	Port Sandeman Towny 10 y.o		98		10	
-20	Dulce de Moscatel Gran Feudo (Bodegas Julian Chivite)	Dulce de Moscatel Gran Feudo (Bodegas Julian Chivite)		76		10	
-21	Baileys	Baileys		98		9	
-22	Cointreau	Cointreau		104		9	
-23	Kahlua	Kahlua		96		9	
-24	Sambuca Ramazotti	Sambuca Ramazotti		92		9	
-25	Grappa Berta (Sant’Antone, Valdavi)	Grappa Berta (Sant’Antone, Valdavi)		210		8	
-26	Calvados Reserver Pays d’Auge (Christian Droun)	Calvados Reserver Pays d’Auge (Christian Droun)		178		8	
-27	Ferrand Ambre	Ferrand Ambre		228		7	
-28	H by Hine VSOP	H by Hine VSOP		232		7	
-29	Cigar Reserve Hine XO	Cigar Reserve Hine XO		350		7	
-30	Jack Daniel’s	Jack Daniel’s		98		6	
-31	Four Roses Small Batch	Four Roses Small Batch		140		6	
-32	Loch Lomond Single Grain	Loch Lomond Single Grain		90		6	
-33	Loch Lomond Original	Loch Lomond Original		110		6	
-34	Jameson Black Barrel	Jameson Black Barrel		170		6	
-35	Arran Lochranza Reserve	Arran Lochranza Reserve		180		6	
-36	BenRiach Sherry 12 y.o	BenRiach Sherry 12 y.o		240		6	
-37	Benromach Sassicaia Wood Finish	Benromach Sassicaia Wood Finish		290		6	
-38	Milagro silver (100% de agave)	Milagro silver (100% de agave)		144		5	
-39	Milagro reposado (100% de agave)	Milagro reposado (100% de agave)		122		5	
-40	Patron Silver	Patron Silver		150		5	
-41	London Hill	London Hill		72		4	
-42	Hendrick’s	Hendrick’s		162		4	
-43	Monkey 47	Monkey 47		198		4	
-44	Santiago de Cuba Carta Blanca	Santiago de Cuba Carta Blanca		50		3	
-45	Santiago de Cuba Anejo	Santiago de Cuba Anejo		50		3	
-46	Plantation 3 stars	Plantation 3 stars		86		3	
-47	Plantation original dark	Plantation original dark		86		3	
-48	Staritsky&Levitsky	Staritsky&Levitsky		88		2	
-49	Grey Goose	Grey Goose		124		2	
-50	Finlandia Cranberry white	Finlandia Cranberry white		58		2	
-51	Tanqueray Sterling	Tanqueray Sterling		76		2	
-52	Martini (bianko, dry)	Martini (bianko, dry)		44		1	
-53	Campari	Campari		80		1	
-54	Jagermeister	Jagermeister		76		1	
-55	Becherovka	Becherovka		58		1	
+1	Loose tea Daman	Loose tea Daman		68		15
+2	Espresso	Espresso		46		14
+3	Americano	Americano		46		14
+4	Espresso Macchiato	Espresso Macchiato		46		14
+5	Cappuccino	Cappuccino		56		14
+6	Latte Macchiato	Latte Macchiato		56		14
+7	Молоко (100мл.)	Молоко (100мл.)		10		14
+8	Апельсин, яблоко, грейпфрут, морква	Апельсин, яблоко, грейпфрут, морква		72		13
+9	Селера	Селера		110		13
+10	Ананас	Ананас		164		13
+11	Rocchetta(Italy)	Rocchetta(Italy)		78	0.5	12
+12	VODA UA (Ukraine)	VODA UA (Ukraine)		34	0.4	12
+13	Coca Cola	Coca Cola		32	0.25	12
+14	Royal Club Tonic water	Royal Club Tonic water		50	0.33	12
+15	Royal Club Soda water	Royal Club Soda water		50	0.33	12
+16	Leffe (light, dark)	Leffe (light, dark)		88	0.33	11
+17	Palm (n/a)	Palm (n/a)		86	0.25	11
+18	Sherry Oloroso Alburejo	Sherry Oloroso Alburejo		76		10
+19	Port Sandeman Towny 10 y.o	Port Sandeman Towny 10 y.o		98		10
+20	Dulce de Moscatel Gran Feudo (Bodegas Julian Chivite)	Dulce de Moscatel Gran Feudo (Bodegas Julian Chivite)		76		10
+21	Baileys	Baileys		98		9
+22	Cointreau	Cointreau		104		9
+23	Kahlua	Kahlua		96		9
+24	Sambuca Ramazotti	Sambuca Ramazotti		92		9
+25	Grappa Berta (Sant’Antone, Valdavi)	Grappa Berta (Sant’Antone, Valdavi)		210		8
+26	Calvados Reserver Pays d’Auge (Christian Droun)	Calvados Reserver Pays d’Auge (Christian Droun)		178		8
+27	Ferrand Ambre	Ferrand Ambre		228		7
+28	H by Hine VSOP	H by Hine VSOP		232		7
+29	Cigar Reserve Hine XO	Cigar Reserve Hine XO		350		7
+30	Jack Daniel’s	Jack Daniel’s		98		6
+31	Four Roses Small Batch	Four Roses Small Batch		140		6
+32	Loch Lomond Single Grain	Loch Lomond Single Grain		90		6
+33	Loch Lomond Original	Loch Lomond Original		110		6
+34	Jameson Black Barrel	Jameson Black Barrel		170		6
+35	Arran Lochranza Reserve	Arran Lochranza Reserve		180		6
+36	BenRiach Sherry 12 y.o	BenRiach Sherry 12 y.o		240		6
+37	Benromach Sassicaia Wood Finish	Benromach Sassicaia Wood Finish		290		6
+38	Milagro silver (100% de agave)	Milagro silver (100% de agave)		144		5
+39	Milagro reposado (100% de agave)	Milagro reposado (100% de agave)		122		5
+40	Patron Silver	Patron Silver		150		5
+41	London Hill	London Hill		72		4
+42	Hendrick’s	Hendrick’s		162		4
+43	Monkey 47	Monkey 47		198		4
+44	Santiago de Cuba Carta Blanca	Santiago de Cuba Carta Blanca		50		3
+45	Santiago de Cuba Anejo	Santiago de Cuba Anejo		50		3
+46	Plantation 3 stars	Plantation 3 stars		86		3
+47	Plantation original dark	Plantation original dark		86		3
+48	Staritsky&Levitsky	Staritsky&Levitsky		88		2
+49	Grey Goose	Grey Goose		124		2
+50	Finlandia Cranberry white	Finlandia Cranberry white		58		2
+51	Tanqueray Sterling	Tanqueray Sterling		76		2
+52	Martini (bianko, dry)	Martini (bianko, dry)		44		1
+53	Campari	Campari		80		1
+54	Jagermeister	Jagermeister		76		1
+55	Becherovka	Becherovka		58		1
 \.
-
-
 --
 -- Data for Name: index_page_content; Type: TABLE DATA; Schema: public; Owner: underwonder_remastered
 --
-
 COPY public.index_page_content (id, title, content, content_eng) FROM stdin;
 1	Про нас	У центрі Києва, на площі Льва Толстого, розташований легендарний італійський ресторан Under Wonder, заснований Галиною Фрунзе та Миколою Голотіним 2009 року.\r\n\r\nВишуканий інтер’єр закладу – інтелігентно простий та багатогранний. Атмосфера ресторану насичена спокоєм з урбаністичним присмаком свободи. Тут можна дозволити собі розкіш приглушеної бесіди під акомпанемент авторських блюд італійської кухні. Завітайте до нас, щоб зануритися в атмосферу комфорту та смаку.	The Under Wonder restaurant is located in the heart of Kiev,\r\non the Lev Tolstoy Square.\r\n\r\nMain priority here is human communication.\r\nIn these walls you can find peace with an urban flavor,\r\nafford a special pleasure of a quiet conversation, gourmet\r\ncuisine in an artistic-designed space.
 2	Меню	Меню Under Wonder сформовано зі страв італійської кухні в авторському виконанні шефа.\r\n\r\nГостям пропонують паштет із печінки цесарки\r\nу вишневій глазурі, салат із пряним лососем\r\nта козиним сиром, теплий салат із телятини\r\nпід медово-гірчичним соусом, філе сібаса з булгуром неро та яєчним соусом, різотто\r\nз гребінцями, білими грибами та пекоріно\r\nз трюфелем, палаючу бістеку фіорентину,\r\nдомашню пасту та тірамісу за старовинним рецептом.\r\nОсобливої уваги заслуговують відомі усьому\r\nмісту фірмові сніданки та ланчі UW.	Menu consist of of Italian and French cuisine in the \r\nauthor's execution from our chef.\r\n\r\nGuests will be offered Sea bass fillet with black burgur\r\nand egg sauce, Guinea fowl liver pate in cherry glaze,\r\nGenoa meat pie with wine sauce, Salad with salmon\r\nand goat cheese, Homemade spinach maltagliati with\r\nrabbit and sun-dried tomatoes, Ligurian style octopus\r\nwith tomatoes and potato gratin, Duck fillet with teriyaki sauce and sweet couscous, a variety of dishes\r\nfrom josper, Tiramisu or Cheesecake with a truffle\r\nin white chocolate and walnut crumbs.
 3	Текст на фото после меню	Атмосфера ресторану ідеальна як для романтичної вечері,\r\nтак і для сімейного обіду у вихідні, сніданку чи ділового ланчу\r\nу будні. UW працює і вночі, тож він є ідеальним місцем\r\nі для пре- чи афтерпаті.	The interior of the restaurant is made in an original manner.\r\nIt combines an industrial American steampunk, noble English \r\ngothic, soft Italian romanticism. All elements perfectly harmonize\r\nand give birth to completely unusual atmosphere.
 4	Інтер’єр	Оригінальний інтер’єр ресторану відверто космополітичний. Залежно від настрою чи сприйняття, він поєднує в собі індустріальний американський стімпанк, благородну британську готику та м’який італійський романтизм. Усі елементи ідеально гармонують між собою та створюють атмосферу затишку і комфорту.\r\n\r\nГоловний зал вміщує 35 гостей, а в режимі фуршету чи паті – 50. Маючи доволі високу стелю, зал освітлюється за допомогою виняткової люстри та настінних бра після заходу сонця. Вдень його наповнює потік денного світла через відкриті назустріч місту двері та вітражні вікна. Автентичні дерев’яні сходи ведуть ще у два зали: зліва – зал з відкритим баром на 8 гостей , справа - з монументальними арками, потужними перекриттями на стелі та загадковими дзеркалами на стінах, розрахований на 40 гостей (80 у режимі фуршету).	The main hall seats up to 35 visitors, and if there is\r\na banquet for a corporate party, it will fit 50 people.\r\nThe ceiling in this hall is of a considerable height,\r\nthe room is illuminated with the help of a huge\r\nhandmade chandelier and wall sconces.\r\n\r\nGoing down the wooden staircase, visitors enter\r\nthe lower room, where they are offered two rooms:\r\na small one, designed for 8 people, and a hall with \r\nmonumental arches for 40 people (80 people\r\nduring a buffet table)
 \.
-
-
 --
 -- Data for Name: menu_categories; Type: TABLE DATA; Schema: public; Owner: underwonder_remastered
 --
-
 COPY public.menu_categories (id, title, title_eng, description, description_eng, parent_id) FROM stdin;
 8	Десерти	Deserts			\N
 7	М`ясо та птиця	Meat and Poultry			\N
@@ -1534,70 +1513,64 @@ COPY public.menu_categories (id, title, title_eng, description, description_eng,
 2	Салати	Salads			\N
 1	Закуски	Appetizers			\N
 \.
-
-
 --
 -- Data for Name: menu_items; Type: TABLE DATA; Schema: public; Owner: underwonder_remastered
 --
-
 COPY public.menu_items (id, title, title_eng, content, price, weight, category_id, content_eng) FROM stdin;
-35	Салат Under Wonder Green	"Under Wonder Green" Salad		112	150	2	
-33	Тартар зі скандинавської форелі з ніжним кремом із авокадо	Scandinavian trout tartare with a gentle avocado cream		184	160	3	
-34	Тартар із телятини з трюфельним кремом	Veal tartare with truffle cream		188	140	3	
-32	Карпаччо із телятини з пармезаном і трюфельною олією	Veal carpaccio with parmesan and truffle oil		120	174	3	
-31	Карпаччо з лосося з апельсиново-гірчичним соусом	Salmon carpaccio with orange-mustard sauce		188	140	3	
-30	Баклажановий крем-суп зі шпинатом, копченою вишнею, сиром Гауда та мигдальним горіхом	Eggplant cream soup with spinach, smocked cherries, Goude cheese and almonds		108	280	4	
-29	П`ємонтський рибний суп	Piedmont fish soup		198	300	4	
-28	Гарбузово-імбирний крем-суп із креветками	Pumpkin-ginger cream soup with shrimps		128	290	4	
+35	Салат Under Wonder Green	"Under Wonder Green" Salad		112	150	2
+33	Тартар зі скандинавської форелі з ніжним кремом із авокадо	Scandinavian trout tartare with a gentle avocado cream		184	160	3
+34	Тартар із телятини з трюфельним кремом	Veal tartare with truffle cream		188	140	3
+32	Карпаччо із телятини з пармезаном і трюфельною олією	Veal carpaccio with parmesan and truffle oil		120	174	3
+31	Карпаччо з лосося з апельсиново-гірчичним соусом	Salmon carpaccio with orange-mustard sauce		188	140	3
+30	Баклажановий крем-суп зі шпинатом, копченою вишнею, сиром Гауда та мигдальним горіхом	Eggplant cream soup with spinach, smocked cherries, Goude cheese and almonds		108	280	4
+29	П`ємонтський рибний суп	Piedmont fish soup		198	300	4
+28	Гарбузово-імбирний крем-суп із креветками	Pumpkin-ginger cream soup with shrimps		128	290	4
 27	Мінестроне	Minestrone	класичний овочевий італійський суп із соусом песто, шпинатом та бебі Моцареллою	118	370	4	classic Italian  vegetable soup with pesto, spinach, and baby mozzarella
-26	Різотто з копченим гарбузом і горгонцолою дольче	Risotto with smoked pumpkin and gorgonzola dolce		164	330	5	
-22	Равіолі неро з лососем, сирним соусом і трюфельним кремом *	Homemade black ravioli with salmon, cheese sauce and truffle cream		188	300	5	
-24	Шпинатові каннеллоні з грибами та рікоттою *	Spinach cannelloni with mushrooms and ricotta		184	250	5	
-25	Різотто з гребінцями, білими грибами та трюфельною пастою	Risotto with scallops, porcini mushrooms and truffle paste		398	280	5	
-23	Равіолі з підкопченим м&#39;ясом кролика та вершковим соусом з Порто *	Ravioli with smoked rabbit meat and cream sauce with Porto		176	200	5	
-21	Тальятелле з М`ясним рагу *	Tagliatelle with beef ragout		172	260	5	
+26	Різотто з копченим гарбузом і горгонцолою дольче	Risotto with smoked pumpkin and gorgonzola dolce		164	330	5
+22	Равіолі неро з лососем, сирним соусом і трюфельним кремом *	Homemade black ravioli with salmon, cheese sauce and truffle cream		188	300	5
+24	Шпинатові каннеллоні з грибами та рікоттою *	Spinach cannelloni with mushrooms and ricotta		184	250	5
+25	Різотто з гребінцями, білими грибами та трюфельною пастою	Risotto with scallops, porcini mushrooms and truffle paste		398	280	5
+23	Равіолі з підкопченим м&#39;ясом кролика та вершковим соусом з Порто *	Ravioli with smoked rabbit meat and cream sauce with Porto		176	200	5
+21	Тальятелле з М`ясним рагу *	Tagliatelle with beef ragout		172	260	5
 20	Спагетті La Carbonara Roma	Spagetti La Carbonara Roma	обсмажена панчетта у вершковому соусі з підкопченим яєчним жовтком	178	380	5	fried pancetta in creamy sauce with smoked egg yolk
-19	Спагетті неро з креветками та винно-вершковим соусом *	Black spagetti with shrimps and cream wine sauce		264	300	5	
-18	Мідії з овочами і лемонграсом у вершковому соусі	Mussels with vegetables and lemongrass in cream sauce		286	800	6	
-17	Восьминіг з буряково-кавовим пюре, запеченим солодким буряком і бататом	Octopus with beetroot coffee puree, baked beetroot and sweet potato		588	220	6	
-16	Філе морського окуня з пюре із цвітної капусти, лимонним кіноа та соусом з мідій	Grouper fillet with cauliflower puree, lemon quinoa and mussel sauce		290	280	6	
-15	Дорадо з овочами, "Папільот", або запечена в солі	Dorado with vegetables "Papilot", or baked in salt		376	280	6	
-14	Філе скандинавської форелі зі спаржею та соусом із чорнил каракатиці	Scandinavian trout fillet with asparagus and nero sauce		358	280	6	
-13	Філе курчати з картопляним пюре, шпинатом і вершковим соусом	Chicken fillet with mashed potatoes, spinach and cream sauce		198	350	7	
-12	Качина ніжка конфі з яблучно-гірчичним пюре, томленою грушею і соусом з чорної смородини	Duck leg confit with apple-mustard puree, stewed pear and black currant sauce		300	300	7	
-11	Рублений біфштекс, обсмажений на грилі, зі спаржевою квасолею та беконом	Fried grilled chopped beef steak with asparagus and bacon		230	330	7	
-10	Стейк рібай	Ribeye steak		352	380	7	
-9	Філе міньйон з трюфельним картопляним гратеном і винним соусом	Filet Mignon with truffle potato gratin and wine sauce		412	330	7	
-8	Бістека Фіорентина	Bistecca alla Fiorentina		358	400	7	
-7	Сорбет	Sorbet		42	50	8	
-6	Морозиво від шефа	Special chef ice-cream		44	50	8	
-5	Чізкейк	Cheesecake		146	130	8	
-4	Шоколадний моале з лавандовим морозивом	Moelleux with lavender ice-cream		136	180	8	
-3	Панна котта	Panna cotta		96	230	8	
-2	Крем-брюле	Creme brulee		82	140	8	
-1	Тірамісу	Tiramisu		128	150	8	
-49	Хлібний кошик	Bread basket		28	200	1	
-48	Грибне рагу з трюфельним соусом і пармезаном	Mushroom ragout with truffle sauce and parmesan		152	220	1	
-50	Карпаччо із запеченого буряка з грушею і горгонцолею	Roasted beet carpaccio with pear  and gorgonzola		128	200	3	
+19	Спагетті неро з креветками та винно-вершковим соусом *	Black spagetti with shrimps and cream wine sauce		264	300	5
+18	Мідії з овочами і лемонграсом у вершковому соусі	Mussels with vegetables and lemongrass in cream sauce		286	800	6
+17	Восьминіг з буряково-кавовим пюре, запеченим солодким буряком і бататом	Octopus with beetroot coffee puree, baked beetroot and sweet potato		588	220	6
+16	Філе морського окуня з пюре із цвітної капусти, лимонним кіноа та соусом з мідій	Grouper fillet with cauliflower puree, lemon quinoa and mussel sauce		290	280	6
+15	Дорадо з овочами, "Папільот", або запечена в солі	Dorado with vegetables "Papilot", or baked in salt		376	280	6
+14	Філе скандинавської форелі зі спаржею та соусом із чорнил каракатиці	Scandinavian trout fillet with asparagus and nero sauce		358	280	6
+13	Філе курчати з картопляним пюре, шпинатом і вершковим соусом	Chicken fillet with mashed potatoes, spinach and cream sauce		198	350	7
+12	Качина ніжка конфі з яблучно-гірчичним пюре, томленою грушею і соусом з чорної смородини	Duck leg confit with apple-mustard puree, stewed pear and black currant sauce		300	300	7
+11	Рублений біфштекс, обсмажений на грилі, зі спаржевою квасолею та беконом	Fried grilled chopped beef steak with asparagus and bacon		230	330	7
+10	Стейк рібай	Ribeye steak		352	380	7
+9	Філе міньйон з трюфельним картопляним гратеном і винним соусом	Filet Mignon with truffle potato gratin and wine sauce		412	330	7
+8	Бістека Фіорентина	Bistecca alla Fiorentina		358	400	7
+7	Сорбет	Sorbet		42	50	8
+6	Морозиво від шефа	Special chef ice-cream		44	50	8
+5	Чізкейк	Cheesecake		146	130	8
+4	Шоколадний моале з лавандовим морозивом	Moelleux with lavender ice-cream		136	180	8
+3	Панна котта	Panna cotta		96	230	8
+2	Крем-брюле	Creme brulee		82	140	8
+1	Тірамісу	Tiramisu		128	150	8
+49	Хлібний кошик	Bread basket		28	200	1
+48	Грибне рагу з трюфельним соусом і пармезаном	Mushroom ragout with truffle sauce and parmesan		152	220	1
+50	Карпаччо із запеченого буряка з грушею і горгонцолею	Roasted beet carpaccio with pear  and gorgonzola		128	200	3
 46	Вітелло тоннато	Vitello Tonnato	ніжна телятина під соусом із тунця і каперсів	178	150	1	veal with tuna sauce
 47	Melanzane alla parmigiana	Melanzane alla parmigiana	наша варіація відомої страви з півдня Італії	134	220	1	our variation of the famous dish from the south of Italy
-45	Паштет із печінки цесарки у вишневій глазурі	Guinea fowl liver pate in cherry glaze		136	180	1	
-44	Моцарелла Di Buffala з віяленими томатами та соусом песто	Buffalo Mozzarella with dried tomatoes and pesto sauce		278	200	1	
-43	Севіче із сибаса з кіноа та манго-чилі соусом	See bass ceviche with quinoa and mango-chili sauce		280	170	1	
+45	Паштет із печінки цесарки у вишневій глазурі	Guinea fowl liver pate in cherry glaze		136	180	1
+44	Моцарелла Di Buffala з віяленими томатами та соусом песто	Buffalo Mozzarella with dried tomatoes and pesto sauce		278	200	1
+43	Севіче із сибаса з кіноа та манго-чилі соусом	See bass ceviche with quinoa and mango-chili sauce		280	170	1
 42	Плато італійських антипасто	Italian antipasti plateau	салямі, прошутто, коппа, пармезан, пекоріно, бебі моцарелла, маринований перець, оливки, класичний і помідорний песто	356	400	1	salami, prosciutto,  coppa, parmesan, pecorino, baby mozzarella, pickled peppers, olives, classic and tomato pesto
-41	Дует брускет із перцем-конфі, козячим сиром і овочевою сапьсою, та з маринованим лососем і каперсами	Double bruschetta with confit pepper, goat cheese and vegetable salsa, and with pickled salmon and capers		178	130	1	
-40	Теплий салат із телятини з цукіні, копченою вишнею і блакитним сиром	Warm salad with veal, zucchini, smoked cherries and blue cheese		212	180	2	
-39	Теплий салат з бебі кальмарами і овочевою сальсою	Warm salad with baby squid and vegetable salsa		298	200	2	
-38	Салат з копченим курчам, гострим манго, авокадо і полуницею	Salad with smoked chicken, spicy mango, avocado and strawberries		188	180	2	
-37	Салат з пряним лососем, авокадо та сиром Шавру	Salad with salmon, avocado and Chavroux cheese		198	200	2	
-36	Салат ромен з копченим філе індички (або зі смаженими креветками) та анчоусовою заправкою	Romain salad with smoked turkey fillet (or with fried shrimps) and anchovy dressing		168/212	220/190	2	
+41	Дует брускет із перцем-конфі, козячим сиром і овочевою сапьсою, та з маринованим лососем і каперсами	Double bruschetta with confit pepper, goat cheese and vegetable salsa, and with pickled salmon and capers		178	130	1
+40	Теплий салат із телятини з цукіні, копченою вишнею і блакитним сиром	Warm salad with veal, zucchini, smoked cherries and blue cheese		212	180	2
+39	Теплий салат з бебі кальмарами і овочевою сальсою	Warm salad with baby squid and vegetable salsa		298	200	2
+38	Салат з копченим курчам, гострим манго, авокадо і полуницею	Salad with smoked chicken, spicy mango, avocado and strawberries		188	180	2
+37	Салат з пряним лососем, авокадо та сиром Шавру	Salad with salmon, avocado and Chavroux cheese		198	200	2
+36	Салат ромен з копченим філе індички (або зі смаженими креветками) та анчоусовою заправкою	Romain salad with smoked turkey fillet (or with fried shrimps) and anchovy dressing		168/212	220/190	2
 \.
-
-
 --
 -- Data for Name: wine_categories; Type: TABLE DATA; Schema: public; Owner: underwonder_remastered
 --
-
 COPY public.wine_categories (id, title, title_eng, description, description_eng, parent_id) FROM stdin;
 23	Португалія	Portugal			\N
 22	ПАР	South Africa			\N
@@ -1630,661 +1603,424 @@ COPY public.wine_categories (id, title, title_eng, description, description_eng,
 --
 
 COPY public.wine_items (id, title, title_eng, content, price, weight, category_id, content_eng) FROM stdin;
-1	Prosecco Millesimato (Canti) DOC 0.75L	Prosecco Millesimato (Canti) DOC 0.75L		760		2	
-2	Senior Valdoniadene Prosecco Superiore (Bortolomiol) DOC 0.2L	Senior Valdoniadene Prosecco Superiore (Bortolomiol) DOC 0.2L		310		2	
-3	Prior Valdobbiadene Prosecco Superiore (Bortolomiol) DOCG 0.75L	Prior Valdobbiadene Prosecco Superiore (Bortolomiol) DOCG 0.75L		970		2	
-4	Cuvee Imperiale Brut (Guido Berlucchi) DOCG 0.375L	Cuvee Imperiale Brut (Guido Berlucchi) DOCG 0.375L		800		2	
-5	Cuvee Imperiale Max Rose (Guido Berlucchi) DOCG 0.75L	Cuvee Imperiale Max Rose (Guido Berlucchi) DOCG 0.75L		1520		2	
-6	Brut Classic (Deutz) AOP 0.75L	Brut Classic (Deutz) AOP 0.75L		2360		2	
-7	Alzania Vino Frizzante Bianco (Alzania) 0.15L	Alzania Vino Frizzante Bianco (Alzania) 0.15L		84		2	
-8	Chateau Boisson Blanc (Bordeaux) AOP	Chateau Boisson Blanc (Bordeaux) AOP		630/84		4	
-9	Chateau Vieux Frene (Bordeaux) AOP	Chateau Vieux Frene (Bordeaux) AOP		600/80		4	
-10	Chateau Vieux du Terme (Haut - Medoc) AOP	Chateau Vieux du Terme (Haut - Medoc) AOP		720/96		4	
-11	Chateau de Sergue (Laland De Pomerol) AOP	Chateau de Sergue (Laland De Pomerol) AOP		2140		4	
-12	Chablis (Domaine Du Colombier) AOP	Chablis (Domaine Du Colombier) AOP		960		5	
-13	Chabli Premier Cru Vaucoupin (Domain Du Colombier) AOP	Chabli Premier Cru Vaucoupin (Domain Du Colombier) AOP		1430		5	
-14	Bourgogne Chardonnay Vieilles Vigne (Domain Du Rochebin) AOP	Bourgogne Chardonnay Vieilles Vigne (Domain Du Rochebin) AOP		1160		5	
-15	Bourgogne Pinot Noir Vicomtee  (Doubet Naudin) AOP	Bourgogne Pinot Noir Vicomtee  (Doubet Naudin) AOP		1020		5	
-16	Cotes du Rhone La Grivelier Pere Anselme white (Brotte) AOP	Cotes du Rhone La Grivelier Pere Anselme white (Brotte) AOP		600/80		6	
-17	Cotes De Provence Pere Anselme (Brotte) AOP	Cotes De Provence Pere Anselme (Brotte) AOP		720/96		6	
-18	Reserve de l'Aube Pere Anselme Syrah-Merlo (Brotte) AOP	Reserve de l'Aube Pere Anselme Syrah-Merlo (Brotte) AOP		540/72		6	
-19	Chateau L'Ermitage (Ambiance Rhone Terroirs) AOP	Chateau L'Ermitage (Ambiance Rhone Terroirs) AOP		690		6	
-20	Peter Nicolay Riesling Trocken (Dr. Heidennemans-Bergweiler)	Peter Nicolay Riesling Trocken (Dr. Heidennemans-Bergweiler)		600/80		7	
-22	Gewurztraminer Villa Wolf (J.L.Wolf) Qualitatswein	Gewurztraminer Villa Wolf (J.L.Wolf) Qualitatswein		540/72		7	
-23	Pinot Noir (Villa Wolf) Qualitatswein	Pinot Noir (Villa Wolf) Qualitatswein		570/76		7	
-24	Шардоне сухое сортовое - Chardonnay (Колонист)	Шардоне сухое сортовое - Chardonnay (Колонист)		420		8	
-25	Каберне сухое сортовое - Cabernet (Колонист)	Каберне сухое сортовое - Cabernet (Колонист)		420		8	
-26	Одеське чорне сухе сортове	Одеське чорне сухе сортове		420/56		8	
-27	White House Wine	White House Wine		240/120		9	
-28	Red House Wine	Red House Wine		240/120		9	
-29	Sancerre Le Chene (Lucien Crochet)	Sancerre Le Chene (Lucien Crochet)		1410/94		10	
-30	Alastro (Planeta)	Alastro (Planeta)		1050/70		10	
-31	Corvar Rosso Veroneze (Zeni)	Corvar Rosso Veroneze (Zeni)		1680/112		10	
-32	Sangiovese Gamla (Golan Heights Winery)	Sangiovese Gamla (Golan Heights Winery)		1020/68		10	
-33	Pecorino Bianco (Illuminati Dino) DOC	Pecorino Bianco (Illuminati Dino) DOC		780/104		12	
-34	Santoro Muntepulciano d'Abruzzo (San Marzano) DOC	Santoro Muntepulciano d'Abruzzo (San Marzano) DOC		600/80		12	
-35	Santoro Sangiovese Terre di Chieti (San Marzano) IGT	Santoro Sangiovese Terre di Chieti (San Marzano) IGT		600/80		12	
-36	Pfefferer Moscato Classic Line (Colterenzio) DOC	Pfefferer Moscato Classic Line (Colterenzio) DOC		720/96		13	
-37	Muller Thurgau Dolomiti Classic Line (Colterenzio)	Muller Thurgau Dolomiti Classic Line (Colterenzio)		720/96		13	
-38	Gavi il Doge (Broglia) DOCG	Gavi il Doge (Broglia) DOCG		720/96		14	
-39	Gavi Villa Scolca (La Scolca) DOCG	Gavi Villa Scolca (La Scolca) DOCG		1190		14	
-40	Dolcetto d'Alba Munfrina (Pelissero) DOC	Dolcetto d'Alba Munfrina (Pelissero) DOC		720/96		14	
-41	Barbaresco Roberto Fossati (Guido Mazzarello) DOCG	Barbaresco Roberto Fossati (Guido Mazzarello) DOCG		1360		14	
-42	Barolo Serralunga (Schiavenza) DOCG	Barolo Serralunga (Schiavenza) DOCG		2260		14	
-43	Pinot GR.delle Venezia Fiorile Cesari IGT	Pinot GR.delle Venezia Fiorile Cesari IGT		540/72		15	
-44	Soave Il Seleze (I Stefanini) DOC	Soave Il Seleze (I Stefanini) DOC		570/76		15	
-45	Valpolicella, Cantine di Ora (Schenk) DOC	Valpolicella, Cantine di Ora (Schenk) DOC		540/72		15	
-46	Amarona della Valpolicella Classico (Cesari) DOCG	Amarona della Valpolicella Classico (Cesari) DOCG		1920		15	
-47	Chianto Classico Riserva (Schenk) DOCG	Chianto Classico Riserva (Schenk) DOCG		870		16	
-48	Il Leo Chianti Superiore (Ruffino) DOCG	Il Leo Chianti Superiore (Ruffino) DOCG		660/88		16	
-49	Poggio alla Guardia (Rocca di Frassinello) DOC	Poggio alla Guardia (Rocca di Frassinello) DOC		870		16	
-50	Vagona (Aia Vecchia) IGT	Vagona (Aia Vecchia) IGT		840		16	
-51	Brunello di Montalcino (Sassetti Livio) DOCG	Brunello di Montalcino (Sassetti Livio) DOCG		2280		16	
-52	Duca di Castelmonte Tareni Inzolia Sicilian (Carlo Pellegrino) IGT	Duca di Castelmonte Tareni Inzolia Sicilian (Carlo Pellegrino) IGT		480/64		17	
-53	Moscato di Noto (Planeta) DOC	Moscato di Noto (Planeta) DOC		980		17	
-54	Duca di Castelmonte Dinari Nero d'Avola Siciliane (Carlo Pellegrino) IGT	Duca di Castelmonte Dinari Nero d'Avola Siciliane (Carlo Pellegrino) IGT		720/96		17	
-55	Plumbago (Planeta) DOC	Plumbago (Planeta) DOC		970		17	
-56	Sauvignon Blanc Marlborough Sun (Saint Clair)			690/92		18	
-57	Sauvignon Rose Marlborough Sun (Saint Clair)	Sauvignon Rose Marlborough Sun (Saint Clair)		720/96		18	
-58	Stump Jump Red Grenache Shiraz Mourvedre (d'Arnberg)			720/96		19	
-59	Sauvignon Blanc Reserva (Montes)	Sauvignon Blanc Reserva (Montes)		540/72		20	
-60	Caberne Sauvignon Reserva (Montes)	Caberne Sauvignon Reserva (Montes)		540/72		20	
-61	Malbec Selected Callia (Salentein)			600/80		21	
-62	Chenin Blanc Savanha (Spier Winesa)			540/72		22	
-63	Pinotage (The Grinder)	Pinotage (The Grinder)		540/72		22	
-64	Colossal Reserva (Casa Santos Lima)			540/72		23	
-21	Riesling (Dr. Loosen) Qualitatswein	Riesling (Dr. Loosen) Qualitatswein		540/72		7	
+1	Prosecco Millesimato (Canti) DOC 0.75L	Prosecco Millesimato (Canti) DOC 0.75L		760		2
+2	Senior Valdoniadene Prosecco Superiore (Bortolomiol) DOC 0.2L	Senior Valdoniadene Prosecco Superiore (Bortolomiol) DOC 0.2L		310		2
+3	Prior Valdobbiadene Prosecco Superiore (Bortolomiol) DOCG 0.75L	Prior Valdobbiadene Prosecco Superiore (Bortolomiol) DOCG 0.75L		970		2
+4	Cuvee Imperiale Brut (Guido Berlucchi) DOCG 0.375L	Cuvee Imperiale Brut (Guido Berlucchi) DOCG 0.375L		800		2
+5	Cuvee Imperiale Max Rose (Guido Berlucchi) DOCG 0.75L	Cuvee Imperiale Max Rose (Guido Berlucchi) DOCG 0.75L		1520		2
+6	Brut Classic (Deutz) AOP 0.75L	Brut Classic (Deutz) AOP 0.75L		2360		2
+7	Alzania Vino Frizzante Bianco (Alzania) 0.15L	Alzania Vino Frizzante Bianco (Alzania) 0.15L		84		2
+8	Chateau Boisson Blanc (Bordeaux) AOP	Chateau Boisson Blanc (Bordeaux) AOP		630/84		4
+9	Chateau Vieux Frene (Bordeaux) AOP	Chateau Vieux Frene (Bordeaux) AOP		600/80		4
+10	Chateau Vieux du Terme (Haut - Medoc) AOP	Chateau Vieux du Terme (Haut - Medoc) AOP		720/96		4
+11	Chateau de Sergue (Laland De Pomerol) AOP	Chateau de Sergue (Laland De Pomerol) AOP		2140		4
+12	Chablis (Domaine Du Colombier) AOP	Chablis (Domaine Du Colombier) AOP		960		5
+13	Chabli Premier Cru Vaucoupin (Domain Du Colombier) AOP	Chabli Premier Cru Vaucoupin (Domain Du Colombier) AOP		1430		5
+14	Bourgogne Chardonnay Vieilles Vigne (Domain Du Rochebin) AOP	Bourgogne Chardonnay Vieilles Vigne (Domain Du Rochebin) AOP		1160		5
+15	Bourgogne Pinot Noir Vicomtee  (Doubet Naudin) AOP	Bourgogne Pinot Noir Vicomtee  (Doubet Naudin) AOP		1020		5
+16	Cotes du Rhone La Grivelier Pere Anselme white (Brotte) AOP	Cotes du Rhone La Grivelier Pere Anselme white (Brotte) AOP		600/80		6
+17	Cotes De Provence Pere Anselme (Brotte) AOP	Cotes De Provence Pere Anselme (Brotte) AOP		720/96		6
+18	Reserve de l'Aube Pere Anselme Syrah-Merlo (Brotte) AOP	Reserve de l'Aube Pere Anselme Syrah-Merlo (Brotte) AOP		540/72		6
+19	Chateau L'Ermitage (Ambiance Rhone Terroirs) AOP	Chateau L'Ermitage (Ambiance Rhone Terroirs) AOP		690		6
+20	Peter Nicolay Riesling Trocken (Dr. Heidennemans-Bergweiler)	Peter Nicolay Riesling Trocken (Dr. Heidennemans-Bergweiler)		600/80		7
+22	Gewurztraminer Villa Wolf (J.L.Wolf) Qualitatswein	Gewurztraminer Villa Wolf (J.L.Wolf) Qualitatswein		540/72		7
+23	Pinot Noir (Villa Wolf) Qualitatswein	Pinot Noir (Villa Wolf) Qualitatswein		570/76		7
+24	Шардоне сухое сортовое - Chardonnay (Колонист)	Шардоне сухое сортовое - Chardonnay (Колонист)		420		8
+25	Каберне сухое сортовое - Cabernet (Колонист)	Каберне сухое сортовое - Cabernet (Колонист)		420		8
+26	Одеське чорне сухе сортове	Одеське чорне сухе сортове		420/56		8
+27	White House Wine	White House Wine		240/120		9
+28	Red House Wine	Red House Wine		240/120		9
+29	Sancerre Le Chene (Lucien Crochet)	Sancerre Le Chene (Lucien Crochet)		1410/94		10
+30	Alastro (Planeta)	Alastro (Planeta)		1050/70		10
+31	Corvar Rosso Veroneze (Zeni)	Corvar Rosso Veroneze (Zeni)		1680/112		10
+32	Sangiovese Gamla (Golan Heights Winery)	Sangiovese Gamla (Golan Heights Winery)		1020/68		10
+33	Pecorino Bianco (Illuminati Dino) DOC	Pecorino Bianco (Illuminati Dino) DOC		780/104		12
+34	Santoro Muntepulciano d'Abruzzo (San Marzano) DOC	Santoro Muntepulciano d'Abruzzo (San Marzano) DOC		600/80		12
+35	Santoro Sangiovese Terre di Chieti (San Marzano) IGT	Santoro Sangiovese Terre di Chieti (San Marzano) IGT		600/80		12
+36	Pfefferer Moscato Classic Line (Colterenzio) DOC	Pfefferer Moscato Classic Line (Colterenzio) DOC		720/96		13
+37	Muller Thurgau Dolomiti Classic Line (Colterenzio)	Muller Thurgau Dolomiti Classic Line (Colterenzio)		720/96		13
+38	Gavi il Doge (Broglia) DOCG	Gavi il Doge (Broglia) DOCG		720/96		14
+39	Gavi Villa Scolca (La Scolca) DOCG	Gavi Villa Scolca (La Scolca) DOCG		1190		14
+40	Dolcetto d'Alba Munfrina (Pelissero) DOC	Dolcetto d'Alba Munfrina (Pelissero) DOC		720/96		14
+41	Barbaresco Roberto Fossati (Guido Mazzarello) DOCG	Barbaresco Roberto Fossati (Guido Mazzarello) DOCG		1360		14
+42	Barolo Serralunga (Schiavenza) DOCG	Barolo Serralunga (Schiavenza) DOCG		2260		14
+43	Pinot GR.delle Venezia Fiorile Cesari IGT	Pinot GR.delle Venezia Fiorile Cesari IGT		540/72		15
+44	Soave Il Seleze (I Stefanini) DOC	Soave Il Seleze (I Stefanini) DOC		570/76		15
+45	Valpolicella, Cantine di Ora (Schenk) DOC	Valpolicella, Cantine di Ora (Schenk) DOC		540/72		15
+46	Amarona della Valpolicella Classico (Cesari) DOCG	Amarona della Valpolicella Classico (Cesari) DOCG		1920		15
+47	Chianto Classico Riserva (Schenk) DOCG	Chianto Classico Riserva (Schenk) DOCG		870		16
+48	Il Leo Chianti Superiore (Ruffino) DOCG	Il Leo Chianti Superiore (Ruffino) DOCG		660/88		16
+49	Poggio alla Guardia (Rocca di Frassinello) DOC	Poggio alla Guardia (Rocca di Frassinello) DOC		870		16
+50	Vagona (Aia Vecchia) IGT	Vagona (Aia Vecchia) IGT		840		16
+51	Brunello di Montalcino (Sassetti Livio) DOCG	Brunello di Montalcino (Sassetti Livio) DOCG		2280		16
+52	Duca di Castelmonte Tareni Inzolia Sicilian (Carlo Pellegrino) IGT	Duca di Castelmonte Tareni Inzolia Sicilian (Carlo Pellegrino) IGT		480/64		17
+53	Moscato di Noto (Planeta) DOC	Moscato di Noto (Planeta) DOC		980		17
+54	Duca di Castelmonte Dinari Nero d'Avola Siciliane (Carlo Pellegrino) IGT	Duca di Castelmonte Dinari Nero d'Avola Siciliane (Carlo Pellegrino) IGT		720/96		17
+55	Plumbago (Planeta) DOC	Plumbago (Planeta) DOC		970		17
+56	Sauvignon Blanc Marlborough Sun (Saint Clair)			690/92		18
+57	Sauvignon Rose Marlborough Sun (Saint Clair)	Sauvignon Rose Marlborough Sun (Saint Clair)		720/96		18
+58	Stump Jump Red Grenache Shiraz Mourvedre (d'Arnberg)			720/96		19
+59	Sauvignon Blanc Reserva (Montes)	Sauvignon Blanc Reserva (Montes)		540/72		20
+60	Caberne Sauvignon Reserva (Montes)	Caberne Sauvignon Reserva (Montes)		540/72		20
+61	Malbec Selected Callia (Salentein)			600/80		21
+62	Chenin Blanc Savanha (Spier Winesa)			540/72		22
+63	Pinotage (The Grinder)	Pinotage (The Grinder)		540/72		22
+64	Colossal Reserva (Casa Santos Lima)			540/72		23
+21	Riesling (Dr. Loosen) Qualitatswein	Riesling (Dr. Loosen) Qualitatswein		540/72		7
 \.
-
-
 --
 -- Name: auth_group_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.auth_group_id_seq', 1, true);
-
-
 --
 -- Name: auth_group_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.auth_group_permissions_id_seq', 30, true);
-
-
 --
 -- Name: auth_permission_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.auth_permission_id_seq', 56, true);
-
-
 --
 -- Name: auth_user_groups_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.auth_user_groups_id_seq', 1, false);
-
-
 --
 -- Name: auth_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.auth_user_id_seq', 1, true);
-
-
 --
 -- Name: auth_user_user_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.auth_user_user_permissions_id_seq', 1, false);
-
-
 --
 -- Name: breakfast_items_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.breakfast_items_id_seq', 13, true);
-
-
 --
 -- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.django_admin_log_id_seq', 360, true);
-
-
 --
 -- Name: django_content_type_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.django_content_type_id_seq', 14, true);
-
-
 --
 -- Name: django_migrations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.django_migrations_id_seq', 49, true);
-
-
 --
 -- Name: drink_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.drink_categories_id_seq', 15, true);
-
-
 --
 -- Name: drink_items_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.drink_items_id_seq', 55, true);
-
-
 --
 -- Name: index_page_content_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.index_page_content_id_seq', 4, true);
-
-
 --
 -- Name: menu_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.menu_categories_id_seq', 8, true);
-
-
 --
 -- Name: menu_items_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.menu_items_id_seq', 50, true);
-
-
 --
 -- Name: wine_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.wine_categories_id_seq', 23, true);
-
-
 --
 -- Name: wine_items_id_seq; Type: SEQUENCE SET; Schema: public; Owner: underwonder_remastered
 --
-
 SELECT pg_catalog.setval('public.wine_items_id_seq', 64, true);
-
-
 --
 -- Name: auth_group auth_group_name_key; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_group
     ADD CONSTRAINT auth_group_name_key UNIQUE (name);
-
-
 --
 -- Name: auth_group_permissions auth_group_permissions_group_id_permission_id_0cd325b0_uniq; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_group_permissions
     ADD CONSTRAINT auth_group_permissions_group_id_permission_id_0cd325b0_uniq UNIQUE (group_id, permission_id);
-
-
 --
 -- Name: auth_group_permissions auth_group_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_group_permissions
     ADD CONSTRAINT auth_group_permissions_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: auth_group auth_group_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_group
     ADD CONSTRAINT auth_group_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: auth_permission auth_permission_content_type_id_codename_01ab375a_uniq; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_permission
     ADD CONSTRAINT auth_permission_content_type_id_codename_01ab375a_uniq UNIQUE (content_type_id, codename);
-
-
 --
 -- Name: auth_permission auth_permission_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_permission
     ADD CONSTRAINT auth_permission_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: auth_user_groups auth_user_groups_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_user_groups
     ADD CONSTRAINT auth_user_groups_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: auth_user_groups auth_user_groups_user_id_group_id_94350c0c_uniq; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_user_groups
     ADD CONSTRAINT auth_user_groups_user_id_group_id_94350c0c_uniq UNIQUE (user_id, group_id);
-
-
 --
 -- Name: auth_user auth_user_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_user
     ADD CONSTRAINT auth_user_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: auth_user_user_permissions auth_user_user_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_user_user_permissions
     ADD CONSTRAINT auth_user_user_permissions_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: auth_user_user_permissions auth_user_user_permissions_user_id_permission_id_14a6b632_uniq; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_user_user_permissions
     ADD CONSTRAINT auth_user_user_permissions_user_id_permission_id_14a6b632_uniq UNIQUE (user_id, permission_id);
-
-
 --
 -- Name: auth_user auth_user_username_key; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_user
     ADD CONSTRAINT auth_user_username_key UNIQUE (username);
-
-
 --
 -- Name: breakfast_items breakfast_items_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.breakfast_items
     ADD CONSTRAINT breakfast_items_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: django_admin_log django_admin_log_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.django_admin_log
     ADD CONSTRAINT django_admin_log_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: django_content_type django_content_type_app_label_model_76bd3d3b_uniq; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.django_content_type
     ADD CONSTRAINT django_content_type_app_label_model_76bd3d3b_uniq UNIQUE (app_label, model);
-
-
 --
 -- Name: django_content_type django_content_type_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.django_content_type
     ADD CONSTRAINT django_content_type_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: django_migrations django_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.django_migrations
     ADD CONSTRAINT django_migrations_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: django_session django_session_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.django_session
     ADD CONSTRAINT django_session_pkey PRIMARY KEY (session_key);
-
-
 --
 -- Name: drink_categories drink_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.drink_categories
     ADD CONSTRAINT drink_categories_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: drink_items drink_items_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.drink_items
     ADD CONSTRAINT drink_items_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: index_page_content index_page_content_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.index_page_content
     ADD CONSTRAINT index_page_content_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: menu_categories menu_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.menu_categories
     ADD CONSTRAINT menu_categories_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: menu_items menu_items_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.menu_items
     ADD CONSTRAINT menu_items_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: wine_categories wine_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.wine_categories
     ADD CONSTRAINT wine_categories_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: wine_items wine_items_pkey; Type: CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.wine_items
     ADD CONSTRAINT wine_items_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: auth_group_name_a6ea08ec_like; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX auth_group_name_a6ea08ec_like ON public.auth_group USING btree (name varchar_pattern_ops);
-
-
 --
 -- Name: auth_group_permissions_group_id_b120cbf9; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX auth_group_permissions_group_id_b120cbf9 ON public.auth_group_permissions USING btree (group_id);
-
-
 --
 -- Name: auth_group_permissions_permission_id_84c5c92e; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX auth_group_permissions_permission_id_84c5c92e ON public.auth_group_permissions USING btree (permission_id);
-
-
 --
 -- Name: auth_permission_content_type_id_2f476e4b; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX auth_permission_content_type_id_2f476e4b ON public.auth_permission USING btree (content_type_id);
-
-
 --
 -- Name: auth_user_groups_group_id_97559544; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX auth_user_groups_group_id_97559544 ON public.auth_user_groups USING btree (group_id);
-
-
 --
 -- Name: auth_user_groups_user_id_6a12ed8b; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX auth_user_groups_user_id_6a12ed8b ON public.auth_user_groups USING btree (user_id);
-
-
 --
 -- Name: auth_user_user_permissions_permission_id_1fbb5f2c; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX auth_user_user_permissions_permission_id_1fbb5f2c ON public.auth_user_user_permissions USING btree (permission_id);
-
-
 --
 -- Name: auth_user_user_permissions_user_id_a95ead1b; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX auth_user_user_permissions_user_id_a95ead1b ON public.auth_user_user_permissions USING btree (user_id);
-
-
 --
 -- Name: auth_user_username_6821ab7c_like; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX auth_user_username_6821ab7c_like ON public.auth_user USING btree (username varchar_pattern_ops);
-
-
 --
 -- Name: breakfast_items_parent_id_10bf4dce; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX breakfast_items_parent_id_10bf4dce ON public.breakfast_items USING btree (parent_id);
-
-
 --
 -- Name: django_admin_log_content_type_id_c4bce8eb; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX django_admin_log_content_type_id_c4bce8eb ON public.django_admin_log USING btree (content_type_id);
-
-
 --
 -- Name: django_admin_log_user_id_c564eba6; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX django_admin_log_user_id_c564eba6 ON public.django_admin_log USING btree (user_id);
-
-
 --
 -- Name: django_session_expire_date_a5c62663; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX django_session_expire_date_a5c62663 ON public.django_session USING btree (expire_date);
-
-
 --
 -- Name: django_session_session_key_c0390e0f_like; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX django_session_session_key_c0390e0f_like ON public.django_session USING btree (session_key varchar_pattern_ops);
-
-
 --
 -- Name: drink_categories_parent_id_7d095609; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX drink_categories_parent_id_7d095609 ON public.drink_categories USING btree (parent_id);
-
-
 --
 -- Name: drink_items_category_id_ec7ed854; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX drink_items_category_id_ec7ed854 ON public.drink_items USING btree (category_id);
-
-
 --
 -- Name: menu_categories_parent_id_c548f262; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX menu_categories_parent_id_c548f262 ON public.menu_categories USING btree (parent_id);
-
-
 --
 -- Name: menu_items_category_id_5066f1ed; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX menu_items_category_id_5066f1ed ON public.menu_items USING btree (category_id);
-
-
 --
 -- Name: wine_categories_parent_id_c858f1fa; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX wine_categories_parent_id_c858f1fa ON public.wine_categories USING btree (parent_id);
-
-
 --
 -- Name: wine_items_category_id_b4205a17; Type: INDEX; Schema: public; Owner: underwonder_remastered
 --
-
 CREATE INDEX wine_items_category_id_b4205a17 ON public.wine_items USING btree (category_id);
-
-
 --
 -- Name: auth_group_permissions auth_group_permissio_permission_id_84c5c92e_fk_auth_perm; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_group_permissions
     ADD CONSTRAINT auth_group_permissio_permission_id_84c5c92e_fk_auth_perm FOREIGN KEY (permission_id) REFERENCES public.auth_permission(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- Name: auth_group_permissions auth_group_permissions_group_id_b120cbf9_fk_auth_group_id; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_group_permissions
     ADD CONSTRAINT auth_group_permissions_group_id_b120cbf9_fk_auth_group_id FOREIGN KEY (group_id) REFERENCES public.auth_group(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- Name: auth_permission auth_permission_content_type_id_2f476e4b_fk_django_co; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_permission
     ADD CONSTRAINT auth_permission_content_type_id_2f476e4b_fk_django_co FOREIGN KEY (content_type_id) REFERENCES public.django_content_type(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- Name: auth_user_groups auth_user_groups_group_id_97559544_fk_auth_group_id; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_user_groups
     ADD CONSTRAINT auth_user_groups_group_id_97559544_fk_auth_group_id FOREIGN KEY (group_id) REFERENCES public.auth_group(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- Name: auth_user_groups auth_user_groups_user_id_6a12ed8b_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_user_groups
     ADD CONSTRAINT auth_user_groups_user_id_6a12ed8b_fk_auth_user_id FOREIGN KEY (user_id) REFERENCES public.auth_user(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- Name: auth_user_user_permissions auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_user_user_permissions
     ADD CONSTRAINT auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm FOREIGN KEY (permission_id) REFERENCES public.auth_permission(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- Name: auth_user_user_permissions auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.auth_user_user_permissions
     ADD CONSTRAINT auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id FOREIGN KEY (user_id) REFERENCES public.auth_user(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- Name: breakfast_items breakfast_items_parent_id_10bf4dce_fk_breakfast_items_id; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.breakfast_items
     ADD CONSTRAINT breakfast_items_parent_id_10bf4dce_fk_breakfast_items_id FOREIGN KEY (parent_id) REFERENCES public.breakfast_items(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- Name: django_admin_log django_admin_log_content_type_id_c4bce8eb_fk_django_co; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.django_admin_log
     ADD CONSTRAINT django_admin_log_content_type_id_c4bce8eb_fk_django_co FOREIGN KEY (content_type_id) REFERENCES public.django_content_type(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- Name: django_admin_log django_admin_log_user_id_c564eba6_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.django_admin_log
     ADD CONSTRAINT django_admin_log_user_id_c564eba6_fk_auth_user_id FOREIGN KEY (user_id) REFERENCES public.auth_user(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- Name: drink_categories drink_categories_parent_id_7d095609_fk_drink_categories_id; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.drink_categories
     ADD CONSTRAINT drink_categories_parent_id_7d095609_fk_drink_categories_id FOREIGN KEY (parent_id) REFERENCES public.drink_categories(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- Name: drink_items drink_items_category_id_ec7ed854_fk_drink_categories_id; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.drink_items
     ADD CONSTRAINT drink_items_category_id_ec7ed854_fk_drink_categories_id FOREIGN KEY (category_id) REFERENCES public.drink_categories(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- Name: menu_categories menu_categories_parent_id_c548f262_fk_menu_categories_id; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.menu_categories
     ADD CONSTRAINT menu_categories_parent_id_c548f262_fk_menu_categories_id FOREIGN KEY (parent_id) REFERENCES public.menu_categories(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- Name: menu_items menu_items_category_id_5066f1ed_fk_menu_categories_id; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.menu_items
     ADD CONSTRAINT menu_items_category_id_5066f1ed_fk_menu_categories_id FOREIGN KEY (category_id) REFERENCES public.menu_categories(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- Name: wine_categories wine_categories_parent_id_c858f1fa_fk_wine_categories_id; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.wine_categories
     ADD CONSTRAINT wine_categories_parent_id_c858f1fa_fk_wine_categories_id FOREIGN KEY (parent_id) REFERENCES public.wine_categories(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- Name: wine_items wine_items_category_id_b4205a17_fk_wine_categories_id; Type: FK CONSTRAINT; Schema: public; Owner: underwonder_remastered
 --
-
 ALTER TABLE ONLY public.wine_items
     ADD CONSTRAINT wine_items_category_id_b4205a17_fk_wine_categories_id FOREIGN KEY (category_id) REFERENCES public.wine_categories(id) DEFERRABLE INITIALLY DEFERRED;
-
-
 --
 -- PostgreSQL database dump complete
 --
-

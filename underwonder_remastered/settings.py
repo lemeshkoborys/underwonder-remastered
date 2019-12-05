@@ -25,7 +25,7 @@ SECRET_KEY = '@4bpw=!tdtdf$sn%7c@a)(^r0jtsdlts$tj*c&_eki@ins_=w4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['digioceideal.pp.ua', '127.0.0.1']
+ALLOWED_HOSTS = ['underwonder.com.ua', '127.0.0.1']
 
 
 # Application definition
@@ -37,11 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'index',
-    'main_menu',
-    'breakfasts',
-    'wine_card',
-    'drinks'
+    'underwonder_remastered.index',
+    'underwonder_remastered.main_menu',
 ]
 
 MIDDLEWARE = [
@@ -112,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'ru-RU'
+LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'Europe/Kiev'
 
@@ -128,6 +125,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_ROOT = 'media'
+MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
