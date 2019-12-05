@@ -3,17 +3,16 @@ version: '3'
 services:
 
   db:
-    build: Dockerfiel.db
+    image: postgres:10
     networks:
       - db_network
     volumes:
       - db_volume
 
   underwonder:
-    build:
-      context: .
-      dockerfile: ./Dockerfile.db
+    build: .
     volumes:
+      - ./dump_final.sql:/docker-entrypoint-initdb.d
       - .:/underwonder
       - static_volume:/underwonder/staticfiles
     networks:
