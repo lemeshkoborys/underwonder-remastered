@@ -13,5 +13,9 @@ COPY requirements.txt /underwonder
 RUN pip install -r requirements.txt
 COPY . /underwonder
 
+FROM postgres
+
+ADD ./devops/db/dummy_dump.sql /docker-entrypoint-initdb.d
+
 EXPOSE 8000
 CMD ["gunicorn", "--bind", ":8000", "underwonder_remastered.wsgi:application"]

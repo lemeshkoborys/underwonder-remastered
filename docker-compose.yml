@@ -3,7 +3,7 @@ version: '3'
 services:
 
   db:
-    image: postgres:10
+    build: Dockerfiel.db
     networks:
       - db_network
     volumes:
