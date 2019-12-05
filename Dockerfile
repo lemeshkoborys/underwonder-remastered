@@ -15,7 +15,3 @@ COPY . /underwonder
 
 EXPOSE 8000
 CMD ["gunicorn", "--bind", ":8000", "underwonder_remastered.wsgi:application"]
-
-FROM postgres
-
-ADD ./dump_final.sql /docker-entrypoint-initdb.d

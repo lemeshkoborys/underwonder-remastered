@@ -12,6 +12,7 @@ services:
   underwonder:
     build: .
     volumes:
+      - ./dump_final.sql:/docker-entrypoint-initdb.d
       - .:/underwonder
       - static_volume:/underwonder/staticfiles
     networks:
